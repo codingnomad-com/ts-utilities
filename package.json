@@ -12,10 +12,15 @@
     "lint": "eslint src/**/*.{ts,tsx} --fix",
     "stylelint": "stylelint src/**/*.{ts,tsx} --fix",
     "commit": "git-cz",
+    "test": "playwright test",
+    "test:show-report": "npx playwright show-report",
+    "test:chromium": "playwright test --project=chromium",
+    "test:debug": "playwright test --debug",
+    "test:codegen": "playwright codegen",
     "release": "standard-version",
     "release:tags": "git push --follow-tags origin main",
     "build": "rollup -c",
-    "prepublishOnly": "rm -rf dist && mkdir dist && yarn lint && yarn build && yarn release && yarn release:tags"
+    "prepublishOnly": "rm -rf dist && mkdir dist && yarn lint && yarn test && yarn build && yarn release && yarn release:tags"
   },
   "publishConfig": {
     "access": "public"
@@ -83,6 +88,7 @@
     "@codingnomad/eslint-config-cn": "^0.1.6",
     "@commitlint/cli": "^17.4.4",
     "@commitlint/config-conventional": "^17.4.4",
+    "@playwright/test": "^1.30.0",
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1",
