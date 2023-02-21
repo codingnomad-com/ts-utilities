@@ -1,0 +1,17 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+
+  "editor.rulers": [80, 120],
+
+  // formatting
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "prettier.printWidth": 80,
+
+  // linting
+  "eslint.validate": ["javascript", "typescript"],
+  "javascript.validate.enable": false
+}
