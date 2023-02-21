@@ -1,20 +1,22 @@
 /* eslint-disable no-nested-ternary */
+
+import { GetFormattedAddressProps } from './interfaces/GetFormattedAddressProps';
+
 // RETURNS: Augsburger Straße 27, 58452 Witten
 // RETURNS: Augsburger Straße, 58452 Witten
 // RETURNS: Augsburger Straße, Witten
 // RETURNS: Augsburger Straße 27, Witten
-// RETURNS: Augsburger Straße 27, 58452
-// RETURNS: Augsburger Straße, 58452
+// RETURNS: Augsburger Straße 27
+// RETURNS: Augsburger Straße
 // RETURNS: 58452 Witten
 // RETURNS: Witten
 
 const getFormattedAddress = (
-  street?: string,
-  streetNumber?: string,
-  zipCode?: string,
-  city?: string,
-  multiline = true,
+  props: GetFormattedAddressProps,
 ): string | undefined => {
+  const { address, multiline = false } = props;
+  const { street, streetNumber, zipCode, city } = address;
+
   const firstPart =
     street && streetNumber
       ? `${street} ${streetNumber}`

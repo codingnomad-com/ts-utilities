@@ -1,4 +1,4 @@
-import { isValidDate } from '../..';
+import isValidDate from './isValidDate';
 
 // RETURNS: 20210913
 
@@ -7,9 +7,9 @@ const getYYYYMMDDDate = (date: Date): string | undefined => {
 
   const offset = date.getTimezoneOffset();
 
-  date = new Date(date.getTime() - offset * 60 * 1000);
+  const formattedDate = new Date(date.getTime() - offset * 60 * 1000);
 
-  return date.toISOString().split('T')[0];
+  return formattedDate.toISOString().split('T')[0];
 };
 
 export default getYYYYMMDDDate;

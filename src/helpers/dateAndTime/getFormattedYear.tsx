@@ -1,12 +1,10 @@
-import { Maybe } from '../../types';
-import { FormatYearOptionsType } from './types';
+import { GetFormattedYearProps } from './interfaces/GetFormattedYearProps';
 
 // RETURNS: 2021
 
-const formatYear = (
-  timestamp: Maybe<number>,
-  options?: FormatYearOptionsType
-): string | undefined => {
+const getFormattedYear = (props: GetFormattedYearProps): string | undefined => {
+  const { timestamp, options } = props;
+
   if (timestamp) {
     const date = new Date(timestamp);
 
@@ -22,4 +20,4 @@ const formatYear = (
   return undefined;
 };
 
-export default formatYear;
+export default getFormattedYear;

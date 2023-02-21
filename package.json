@@ -67,9 +67,10 @@
     ]
   },
   "keywords": [
+    "library",
     "react",
-    "utilities",
-    "library"
+    "typescript",
+    "utilities"
   ],
   "dependencies": {
     "@types/node": "^18.14.0",

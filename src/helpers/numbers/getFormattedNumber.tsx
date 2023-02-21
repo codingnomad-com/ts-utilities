@@ -1,12 +1,10 @@
-import { Maybe } from '../../types';
-import { FormatNumberOptionsType } from './types';
+import { GetFormattedNumberProps } from './interfaces/GetFormattedNumberProps';
 
 // RETURNS: 12.235,53
 
-const formatNumber = (
-  value: Maybe<number>,
-  options?: FormatNumberOptionsType
-): string | undefined => {
+const formatNumber = (props: GetFormattedNumberProps): string | undefined => {
+  const { value, options } = props;
+
   if (value) {
     const {
       useGrouping = true,
@@ -16,7 +14,6 @@ const formatNumber = (
     } = options || {};
 
     const formatOptions = {
-      style: 'decimals',
       useGrouping,
       minimumFractionDigits,
       maximumFractionDigits,

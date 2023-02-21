@@ -1,12 +1,10 @@
-import { Maybe } from '../../types';
-import { FormatTimeOptionsType } from './types';
+import { GetFormattedTimeProps } from './interfaces/GetFormattedTimeProps';
 
 // RETURNS: 14:15
 
-const formatTime = (
-  timestamp: Maybe<number>,
-  options?: FormatTimeOptionsType
-): string | undefined => {
+const getFormattedTime = (props: GetFormattedTimeProps): string | undefined => {
+  const { timestamp, options } = props;
+
   if (timestamp) {
     const date = new Date(timestamp);
 
@@ -31,4 +29,4 @@ const formatTime = (
   return undefined;
 };
 
-export default formatTime;
+export default getFormattedTime;

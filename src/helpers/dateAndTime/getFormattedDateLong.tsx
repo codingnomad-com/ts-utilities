@@ -1,18 +1,18 @@
 import { Maybe } from '../../types';
-import { FormatDateNormalOptionsType } from './types';
+import { GetFormattedDateLongProps } from './interfaces/GetFormattedDateLongProps';
 
-// RETURNS: 24.08.2021
+// RETURNS: 25. August 2021
 
-const formatDate = (
-  timestamp: Maybe<number>,
-  options?: FormatDateNormalOptionsType
+const getFormattedDateLong = (
+  props: GetFormattedDateLongProps,
 ): Maybe<string> => {
+  const { timestamp, options } = props;
   if (timestamp) {
     const date = new Date(timestamp);
 
     const {
-      dayFormat,
-      monthFormat = '2-digit',
+      dayFormat = 'numeric',
+      monthFormat = 'long',
       yearFormat = 'numeric',
       locale = 'de-DE',
     } = options || {};
@@ -29,4 +29,4 @@ const formatDate = (
   return undefined;
 };
 
-export default formatDate;
+export default getFormattedDateLong;

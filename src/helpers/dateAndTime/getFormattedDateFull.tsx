@@ -1,12 +1,13 @@
 import { Maybe } from '../../types';
-import { FormatDateFullOptionsType } from './types';
+import { GetFormattedDateFullProps } from './interfaces/GetFormattedDateFullProps';
 
 // RETURNS: Dienstag, 25. August 2021
 
-const formatDateFull = (
-  timestamp: Maybe<number>,
-  options?: FormatDateFullOptionsType
+const getFormattedDateFull = (
+  props: GetFormattedDateFullProps,
 ): Maybe<string> => {
+  const { timestamp, options } = props;
+
   if (timestamp) {
     const date = new Date(timestamp);
 
@@ -31,4 +32,4 @@ const formatDateFull = (
   return undefined;
 };
 
-export default formatDateFull;
+export default getFormattedDateFull;

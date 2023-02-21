@@ -1,15 +1,13 @@
-import { Maybe } from '../../types';
-import { FormatCurrencyOptionsType } from './types';
-
 // RETURNS: 12.235,53 €
 
-const formatCurrency = (
-  value: Maybe<number>,
-  options?: FormatCurrencyOptionsType
+import { GetFormattedCurrencyProps } from './interfaces/GetFormattedCurrencyProps';
+
+const getFormattedCurrency = (
+  props: GetFormattedCurrencyProps,
 ): string | undefined => {
-  if (!value) {
-    value = 0;
-  }
+  const { value, options } = props;
+
+  const valueToFormat = value || 0;
 
   const {
     currencyDisplay = 'symbol',
@@ -29,7 +27,7 @@ const formatCurrency = (
     maximumFractionDigits,
   };
 
-  return new Intl.NumberFormat(locale, formatOptions).format(value);
+  return new Intl.NumberFormat(locale, formatOptions).format(valueToFormat);
 };
 
-export default formatCurrency;
+export default getFormattedCurrency;

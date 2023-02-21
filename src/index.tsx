@@ -1,31 +1,31 @@
+// -------------------------------------------------------------------------- //
+// DATA --------------------------------------------------------------------- //
+// -------------------------------------------------------------------------- //
 export * from './data';
-export * from './types';
-
 // -------------------------------------------------------------------------- //
 // HELPERS ------------------------------------------------------------------ //
 // -------------------------------------------------------------------------- //
-
 // address
 export { default as getFormattedAddress } from './helpers/address/getFormattedAddress';
-
 // dateAndTime
-export { default as formatDate } from './helpers/dateAndTime/formatDate';
-export { default as formatDateFull } from './helpers/dateAndTime/formatDateFull';
-export { default as formatDateLong } from './helpers/dateAndTime/formatDateLong';
-export { default as formatDateRange } from './helpers/dateAndTime/formatDateRange';
-export { default as formatDates } from './helpers/dateAndTime/formatDates';
-export { default as formatTime } from './helpers/dateAndTime/formatTime';
-export { default as formatYear } from './helpers/dateAndTime/formatYear';
+export { default as getFormattedDate } from './helpers/dateAndTime/getFormattedDate';
+export { default as getFormattedDateFull } from './helpers/dateAndTime/getFormattedDateFull';
+export { default as getFormattedDateLong } from './helpers/dateAndTime/getFormattedDateLong';
+export { default as getFormattedDateRange } from './helpers/dateAndTime/getFormattedDateRange';
+export { default as getFormattedDates } from './helpers/dateAndTime/getFormattedDates';
+export { default as getFormattedTime } from './helpers/dateAndTime/getFormattedTime';
+export { default as getFormattedYear } from './helpers/dateAndTime/getFormattedYear';
 export { default as getYYYYMMDDDate } from './helpers/dateAndTime/getYYYYMMDDDate';
 export { default as isValidDate } from './helpers/dateAndTime/isValidDate';
-
 // numbers
-export { default as formatCurrency } from './helpers/numbers/formatCurrency';
-export { default as formatNumber } from './helpers/numbers/formatNumber';
-export { default as formatPercent } from './helpers/numbers/formatPercent';
-
+export { default as getFormattedCurrency } from './helpers/numbers/getFormattedCurrency';
+export { default as getFormattedNumber } from './helpers/numbers/getFormattedNumber';
+export { default as getFormattedPercent } from './helpers/numbers/getFormattedPercent';
 // phoneNumbers
 export { default as getDialCode } from './helpers/phoneNumbers/getDialCode';
-
 // token
 export { default as getTokenValues } from './helpers/token/getTokenValues';
+// -------------------------------------------------------------------------- //
+// TYPES -------------------------------------------------------------------- //
+// -------------------------------------------------------------------------- //
+export * from './types';

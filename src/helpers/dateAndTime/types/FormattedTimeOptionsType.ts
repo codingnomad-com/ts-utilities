@@ -3,7 +3,7 @@ import { HourFormatType } from './HourFormatType';
 import { MinuteFormatType } from './MinuteFormatType';
 import { SecondFormatType } from './SecondFormatType';
 
-export type FormatTimeOptionsType = {
+export type FormattedTimeOptionsType = {
   hourFormat?: HourFormatType;
   minuteFormat?: MinuteFormatType;
   secondFormat?: SecondFormatType;
