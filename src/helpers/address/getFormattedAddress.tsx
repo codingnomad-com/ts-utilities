@@ -1,18 +1,19 @@
-// RETURNS: Am Lenkwerk 5, 33609 Bielefeld
-// RETURNS: Am Lenkwerk, 33609 Bielefeld
-// RETURNS: Am Lenkwerk, Bielefeld
-// RETURNS: Am Lenkwerk 5, Bielefeld
-// RETURNS: Am Lenkwerk 5, 33609
-// RETURNS: Am Lenkwerk, 33609
-// RETURNS: 33609 Bielefeld
-// RETURNS: Bielefeld
+/* eslint-disable no-nested-ternary */
+// RETURNS: Augsburger Straße 27, 58452 Witten
+// RETURNS: Augsburger Straße, 58452 Witten
+// RETURNS: Augsburger Straße, Witten
+// RETURNS: Augsburger Straße 27, Witten
+// RETURNS: Augsburger Straße 27, 58452
+// RETURNS: Augsburger Straße, 58452
+// RETURNS: 58452 Witten
+// RETURNS: Witten
 
 const getFormattedAddress = (
   street?: string,
   streetNumber?: string,
   zipCode?: string,
   city?: string,
-  multiline = true
+  multiline = true,
 ): string | undefined => {
   const firstPart =
     street && streetNumber
