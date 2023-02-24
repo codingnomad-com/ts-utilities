@@ -18,6 +18,7 @@
     "test:codegen": "playwright codegen",
     "preflight": "yarn lint && yarn tsc && yarn test",
     "commit": "yarn preflight && git-cz",
+    "commit:skip-preflight": "git-cz",
     "release": "standard-version",
     "release:tags": "git push --follow-tags origin main",
     "build": "rimraf dist && node esbuild.config.mjs && tsc --outDir dist",
