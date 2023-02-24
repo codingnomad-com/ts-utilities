@@ -15,13 +15,12 @@
     "test:chromium": "playwright test --project=chromium",
     "test:debug": "playwright test --debug",
     "test:codegen": "playwright codegen",
-    "commit": "git-cz",
+    "preflight": "yarn lint && yarn tsc && yarn test",
+    "commit": "yarn preflight && git-cz",
     "release": "standard-version",
     "release:tags": "git push --follow-tags origin main",
     "build": "rimraf dist && node esbuild.config.mjs && tsc --outDir dist",
-    "prepublishOnly": "yarn lint && yarn tsc && yarn test && yarn build && yarn release && yarn release:tags",
-    "buildOld": "rollup -c",
-    "prepublishOnlyOld": "rm -rf dist && mkdir dist && yarn lint && yarn test && yarn build && yarn release && yarn release:tags"
+    "prepublishOnly": "yarn preflight && yarn build && yarn release && yarn release:tags"
   },
   "publishConfig": {
     "access": "public"
