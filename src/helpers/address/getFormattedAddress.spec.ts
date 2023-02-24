@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import getFormattedAddress from './getFormattedAddress';
+import { getFormattedAddress } from './getFormattedAddress';
 
 test.describe.configure({ mode: 'parallel' });
 

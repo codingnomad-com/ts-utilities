@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import getFormattedDateLong from './getFormattedDateLong';
+import { getFormattedDateLong } from './getFormattedDateLong';
 
 test.describe.configure({ mode: 'parallel' });
 

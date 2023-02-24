@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 import { IsoCodeType } from '../../data/countries/types/IsoCodeType';
-import getDialCode from './getDialCode';
+import { getDialCode } from './getDialCode';
 
 test.describe.configure({ mode: 'parallel' });
 

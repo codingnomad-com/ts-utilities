@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import getFormattedYear from './getFormattedYear';
+import { getFormattedYear } from './getFormattedYear';
 
 test.describe.configure({ mode: 'parallel' });
 

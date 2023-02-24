@@ -1,18 +1,15 @@
 import { Maybe } from '../../types';
-import getFormattedDate from './getFormattedDate';
-import getFormattedDateFull from './getFormattedDateFull';
-import getFormattedDateLong from './getFormattedDateLong';
-
-import {
-  FormattedDateFullOptionsType,
-  FormattedDateLongOptionsType,
-  FormattedDateNormalOptionsType,
-  FormattedDatesReturnType,
-} from './types';
+import { getFormattedDate } from './getFormattedDate';
+import { getFormattedDateFull } from './getFormattedDateFull';
+import { getFormattedDateLong } from './getFormattedDateLong';
+import { FormattedDateFullOptionsType } from './types/FormattedDateFullOptionsType';
+import { FormattedDateLongOptionsType } from './types/FormattedDateLongOptionsType';
+import { FormattedDateNormalOptionsType } from './types/FormattedDateNormalOptionsType';
+import { FormattedDatesReturnType } from './types/FormattedDatesReturnType';
 
 // RETURNS: { dateNormal, dateLong, dateFull }
 
-const getFormattedDates = (
+export const getFormattedDates = (
   timestamp: Maybe<number>,
   dateNormalOptions: FormattedDateNormalOptionsType,
   dateLongOptions: FormattedDateLongOptionsType,
@@ -39,5 +36,3 @@ const getFormattedDates = (
 
   return { dateNormal: undefined, dateLong: undefined, dateFull: undefined };
 };
-
-export default getFormattedDates;

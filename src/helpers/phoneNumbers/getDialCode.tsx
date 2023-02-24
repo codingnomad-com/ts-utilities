@@ -1,11 +1,11 @@
-import { Countries } from '../../data';
+import { Countries } from '../../data/countries/Countries';
 import { CountryType, IsoCodeType } from '../../types';
 
 // RETURNS: +49
 
-const getDialCode = (isoCode: IsoCodeType): string | undefined => {
+export const getDialCode = (isoCode: IsoCodeType): string | undefined => {
   const selectedCountry = Countries.find(
-    (country: CountryType) => country.isoCode === isoCode
+    (country: CountryType) => country.isoCode === isoCode,
   );
 
   if (selectedCountry) {
@@ -14,5 +14,3 @@ const getDialCode = (isoCode: IsoCodeType): string | undefined => {
 
   return undefined;
 };
-
-export default getDialCode;

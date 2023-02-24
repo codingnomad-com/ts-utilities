@@ -3,7 +3,7 @@ import { GetFormattedDateLongProps } from './interfaces/GetFormattedDateLongProp
 
 // RETURNS: 25. August 2021
 
-const getFormattedDateLong = (
+export const getFormattedDateLong = (
   props: GetFormattedDateLongProps,
 ): Maybe<string> => {
   const { timestamp, options } = props;
@@ -28,5 +28,3 @@ const getFormattedDateLong = (
 
   return undefined;
 };
-
-export default getFormattedDateLong;

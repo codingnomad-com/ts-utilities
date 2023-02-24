@@ -3,7 +3,7 @@ import { GetFormattedDateFullProps } from './interfaces/GetFormattedDateFullProp
 
 // RETURNS: Dienstag, 25. August 2021
 
-const getFormattedDateFull = (
+export const getFormattedDateFull = (
   props: GetFormattedDateFullProps,
 ): Maybe<string> => {
   const { timestamp, options } = props;
@@ -31,5 +31,3 @@ const getFormattedDateFull = (
 
   return undefined;
 };
-
-export default getFormattedDateFull;

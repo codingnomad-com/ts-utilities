@@ -1,5 +1,5 @@
-import getFormattedDate from './getFormattedDate';
-import getFormattedTime from './getFormattedTime';
+import { getFormattedDate } from './getFormattedDate';
+import { getFormattedTime } from './getFormattedTime';
 import { GetFormattedDateRangeProps } from './interfaces/GetFormattedDateRangeProps';
 import { FormattedTimeOptionsType } from './types/FormattedTimeOptionsType';
 
@@ -8,7 +8,7 @@ import { FormattedTimeOptionsType } from './types/FormattedTimeOptionsType';
 // RETURNS: 01.01.2022, 15:00 - 19:30
 // RETURNS: 01.01.2022 - 14.01.2022
 
-const getFormattedDateRange = (
+export const getFormattedDateRange = (
   props: GetFormattedDateRangeProps,
 ): string | undefined => {
   const { dateNormalOptions, endDate, startDate, withTime } = props;
@@ -63,5 +63,3 @@ const getFormattedDateRange = (
 
   return undefined;
 };
-
-export default getFormattedDateRange;

@@ -3,7 +3,9 @@ import { GetFormattedDateProps } from './interfaces/GetFormattedDateProps';
 
 // RETURNS: 24.08.2021
 
-const getFormattedDate = (props: GetFormattedDateProps): Maybe<string> => {
+export const getFormattedDate = (
+  props: GetFormattedDateProps,
+): Maybe<string> => {
   const { timestamp, options } = props;
 
   if (timestamp) {
@@ -27,5 +29,3 @@ const getFormattedDate = (props: GetFormattedDateProps): Maybe<string> => {
 
   return undefined;
 };
-
-export default getFormattedDate;

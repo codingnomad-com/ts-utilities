@@ -2,7 +2,7 @@ import { GetFormattedPercentProps } from './interfaces/GetFormattedPercentProps'
 
 // RETURNS: 12.235,53 %
 
-const getFormattedPercent = (
+export const getFormattedPercent = (
   props: GetFormattedPercentProps,
 ): string | undefined => {
   const { value, options } = props;
@@ -29,5 +29,3 @@ const getFormattedPercent = (
 
   return undefined;
 };
-
-export default getFormattedPercent;

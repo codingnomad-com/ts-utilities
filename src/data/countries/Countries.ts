@@ -1,6 +1,6 @@
 import { CountryType } from '../../types';
 
-const Countries: CountryType[] = [
+export const Countries: CountryType[] = [
   {
     name: 'Afghanistan',
     dialCode: '+93',
@@ -1472,5 +1472,3 @@ const Countries: CountryType[] = [
     flag: 'https://www.countryflags.io/ZW/flat/64.png',
   },
 ];
-
-export default Countries;

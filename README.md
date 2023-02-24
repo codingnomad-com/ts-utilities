@@ -1,19 +1,32 @@
-# Coding Nomad - ts-utilities
+# @codingnomad/ts-utilities
 
-> Contains global definitions such as app-theme, portal-theme and general config for all projects
+> Utility library containing a bunch of frequently used TypeScript functions.
 
-- [Coding Nomad - ts-utilities](#coding-nomad---ts-utilities)
+<!-- TOC -->
+
+- [@codingnomad/ts-utilities](#codingnomadts-utilities)
+  - [Documentation](#documentation)
   - [Changelog](#changelog)
-  - [Important](#important)
+  - [Development](#development)
+    - [Important](#important)
+    - [Publishing changes](#publishing-changes)
 
-<a name="changelog"></a>
+<!-- /TOC -->
+
+## Documentation
+
+Here you can find the [CHANGELOG.md](docs).
 
 ## Changelog
 
 Here you can find the automatically generated [CHANGELOG.md](CHANGELOG.md).
 
-<a name="important"></a>
+## Development
 
-## Important
+### Important
 
-Never touch the version tag in package.json manually!
+> Never touch the version tag in package.json manually!
+
+### Publishing changes
+
+TBD

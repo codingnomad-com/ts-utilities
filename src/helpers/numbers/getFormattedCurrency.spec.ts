@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import getFormattedCurrency from './getFormattedCurrency';
+import { getFormattedCurrency } from './getFormattedCurrency';
 import { FormattedCurrencyOptionsType } from './types/FormattedCurrencyOptionsType';
 
 test.describe.configure({ mode: 'parallel' });

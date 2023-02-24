@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const isValidDate = (date: any): boolean => {
+export const isValidDate = (date: any): boolean => {
   return (
     (date &&
       Object.prototype.toString.call(date) === '[object Date]' &&
@@ -7,5 +7,3 @@ const isValidDate = (date: any): boolean => {
     false
   );
 };
-
-export default isValidDate;

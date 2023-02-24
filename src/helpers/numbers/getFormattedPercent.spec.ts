@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import getFormattedPercent from './getFormattedPercent';
+import { getFormattedPercent } from './getFormattedPercent';
 import { FormattedPercentOptionsType } from './types/FormattedPercentOptionsType';
 
 test.describe.configure({ mode: 'parallel' });

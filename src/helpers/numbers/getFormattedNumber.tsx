@@ -2,7 +2,9 @@ import { GetFormattedNumberProps } from './interfaces/GetFormattedNumberProps';
 
 // RETURNS: 12.235,53
 
-const formatNumber = (props: GetFormattedNumberProps): string | undefined => {
+export const getFormattedNumber = (
+  props: GetFormattedNumberProps,
+): string | undefined => {
   const { value, options } = props;
 
   if (value) {
@@ -24,5 +26,3 @@ const formatNumber = (props: GetFormattedNumberProps): string | undefined => {
 
   return undefined;
 };
-
-export default formatNumber;

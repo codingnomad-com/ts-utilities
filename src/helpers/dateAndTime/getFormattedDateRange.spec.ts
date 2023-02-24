@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import getFormattedDateRange from './getFormattedDateRange';
+import { getFormattedDateRange } from './getFormattedDateRange';
 import { DayFormatType } from './types/DayFormatType';
 
 test.describe.configure({ mode: 'parallel' });

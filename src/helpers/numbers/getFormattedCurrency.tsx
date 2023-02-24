@@ -2,7 +2,7 @@
 
 import { GetFormattedCurrencyProps } from './interfaces/GetFormattedCurrencyProps';
 
-const getFormattedCurrency = (
+export const getFormattedCurrency = (
   props: GetFormattedCurrencyProps,
 ): string | undefined => {
   const { value, options } = props;
@@ -29,5 +29,3 @@ const getFormattedCurrency = (
 
   return new Intl.NumberFormat(locale, formatOptions).format(valueToFormat);
 };
-
-export default getFormattedCurrency;

@@ -11,7 +11,7 @@ import { GetFormattedAddressProps } from './interfaces/GetFormattedAddressProps'
 // RETURNS: 58452 Witten
 // RETURNS: Witten
 
-const getFormattedAddress = (
+export const getFormattedAddress = (
   props: GetFormattedAddressProps,
 ): string | undefined => {
   const { address, multiline = false } = props;
@@ -45,5 +45,3 @@ const getFormattedAddress = (
 
   return undefined;
 };
-
-export default getFormattedAddress;

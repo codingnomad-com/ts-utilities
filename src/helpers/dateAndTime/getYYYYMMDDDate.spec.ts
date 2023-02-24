@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import getYYYYMMDDDate from './getYYYYMMDDDate';
+import { getYYYYMMDDDate } from './getYYYYMMDDDate';
 
 test.describe.configure({ mode: 'parallel' });
 

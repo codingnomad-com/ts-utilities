@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import getFormattedNumber from './getFormattedNumber';
+import { getFormattedNumber } from './getFormattedNumber';
 import { FormattedNumberOptionsType } from './types/FormattedNumberOptionsType';
 
 test.describe.configure({ mode: 'parallel' });

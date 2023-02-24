@@ -2,7 +2,9 @@ import { GetFormattedTimeProps } from './interfaces/GetFormattedTimeProps';
 
 // RETURNS: 14:15
 
-const getFormattedTime = (props: GetFormattedTimeProps): string | undefined => {
+export const getFormattedTime = (
+  props: GetFormattedTimeProps,
+): string | undefined => {
   const { timestamp, options } = props;
 
   if (timestamp) {
@@ -28,5 +30,3 @@ const getFormattedTime = (props: GetFormattedTimeProps): string | undefined => {
 
   return undefined;
 };
-
-export default getFormattedTime;

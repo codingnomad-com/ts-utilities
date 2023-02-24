@@ -16,5 +16,3 @@ export const getTokenValues = (token: string, properties: string[]): any => {
 
   return tokenValues;
 };
-
-export default getTokenValues;

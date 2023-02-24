@@ -2,7 +2,9 @@ import { GetFormattedYearProps } from './interfaces/GetFormattedYearProps';
 
 // RETURNS: 2021
 
-const getFormattedYear = (props: GetFormattedYearProps): string | undefined => {
+export const getFormattedYear = (
+  props: GetFormattedYearProps,
+): string | undefined => {
   const { timestamp, options } = props;
 
   if (timestamp) {
@@ -19,5 +21,3 @@ const getFormattedYear = (props: GetFormattedYearProps): string | undefined => {
 
   return undefined;
 };
-
-export default getFormattedYear;
