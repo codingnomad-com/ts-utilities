@@ -1,6 +1,6 @@
 {
   "name": "@codingnomad/ts-utilities",
-  "version": "0.0.9",
+  "version": "0.0.8",
   "description": "Contains all sorts of global helper functions and data objects",
   "repository": "github:codingnomad-com/ts-utilities",
   "author": "Manuel Bachl | Coding Nomad <manuel@coding-nomad.com> (https://coding-nomad.com)",
@@ -23,56 +23,6 @@
     "build": "rimraf dist && node esbuild.config.mjs && tsc --outDir dist",
     "prepublishOnly": "yarn preflight && yarn build && yarn release && yarn release:tags"
   },
-  "publishConfig": {
-    "access": "public"
-  },
-  "files": [
-    "dist"
-  ],
-  "peerDependencies": {
-    "prop-types": "^15.7.2"
-  },
-  "license": "Unlicense",
-  "engines": {
-    "node": ">=8.0.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged && git add ."
-    }
-  },
-  "hooks": {
-    "pre-commit": [
-      {
-        "message": "You’ve got leftover conflict markers",
-        "regex": "/^[<>|=]{4,}/m"
-      },
-      {
-        "filter": "\\.js$",
-        "message": "You’ve got leftover `console.log`",
-        "regex": "console\\.log"
-      }
-    ]
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
-  },
-  "lint-staged": {
-    "{src,docs}/**/*.{js,json,css,jsx,ts,tsx} *.js": [
-      "pretty-quick --staged",
-      "npm run stylelint",
-      "eslint --fix --quiet --ignore-path .gitignore",
-      "git add"
-    ]
-  },
-  "keywords": [
-    "library",
-    "react",
-    "typescript",
-    "utilities"
-  ],
   "dependencies": {
     "@types/node": "^18.14.0",
     "@types/react": "^18.0.28",
@@ -114,5 +64,26 @@
     "ts-loader": "^9.4.2",
     "which": "^3.0.0",
     "yargs-parser": "^21.1.1"
-  }
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "Unlicense",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "keywords": [
+    "library",
+    "react",
+    "typescript",
+    "utilities"
+  ]
 }
