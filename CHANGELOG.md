@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.16](https://github.com/codingnomad-com/ts-utilities/compare/v0.0.15...v0.0.16) (2023-02-25)
+
+
+### Features
+
+* **phonenumbers:** added getFormattedPhoneNumber helper ([cdee648](https://github.com/codingnomad-com/ts-utilities/commit/cdee648577fa5f171613ba0188e46a92695e557b))
+
 ### [0.0.15](https://github.com/codingnomad-com/ts-utilities/compare/v0.0.14...v0.0.15) (2023-02-25)
 
 
