@@ -23,6 +23,7 @@ export * from './helpers/numbers/getFormattedNumber';
 export * from './helpers/numbers/getFormattedPercent';
 // phoneNumbers
 export * from './helpers/phoneNumbers/getDialCode';
+export * from './helpers/phoneNumbers/getFormattedPhoneNumber';
 // token
 export * from './helpers/token/getTokenValues';
 // -------------------------------------------------------------------------- //

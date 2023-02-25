@@ -14,3 +14,5 @@ export * from './helpers/dateAndTime/interfaces/GetFormattedYearProps';
 export * from './helpers/numbers/interfaces/GetFormattedCurrencyProps';
 export * from './helpers/numbers/interfaces/GetFormattedNumberProps';
 export * from './helpers/numbers/interfaces/GetFormattedPercentProps';
+// phoneNumbers
+export * from './helpers/phoneNumbers/interfaces/GetFormattedPhoneNumberProps';
