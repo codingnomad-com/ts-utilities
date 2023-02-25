@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.17](https://github.com/codingnomad-com/ts-utilities/compare/v0.0.16...v0.0.17) (2023-02-25)
+
+
+### Features
+
+* **openinghours:** added getFormattedOpeningHours and getWeekdaysForLocale functions ([5ebff0a](https://github.com/codingnomad-com/ts-utilities/commit/5ebff0a641d5f444deb1dc5d633e250f77eb0ed3))
+
 ### [0.0.16](https://github.com/codingnomad-com/ts-utilities/compare/v0.0.15...v0.0.16) (2023-02-25)
 
 
