@@ -17,11 +17,12 @@ export const SessionStorageServiceFactory = (
 
   getNamespacedKey: (key: string): string => [namespace, key].join(':'),
 
-  setSessionStorageItem: async (key: string, value: string): Promise<void> => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  setSessionStorageItem: async (key: string, value: any): Promise<void> => {
     try {
       return window.sessionStorage.setItem(
         SessionStorageServiceFactory(namespace).getNamespacedKey(key),
-        value,
+        JSON.stringify(value),
       );
     } catch {
       return undefined;

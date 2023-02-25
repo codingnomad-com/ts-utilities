@@ -17,7 +17,8 @@ export const LocalStorageServiceFactory = (
 
   getNamespacedKey: (key: string): string => [namespace, key].join(':'),
 
-  setLocalStorageItem: async (key: string, value: string): Promise<void> => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  setLocalStorageItem: async (key: string, value: any): Promise<void> => {
     try {
       return window.localStorage.setItem(
         LocalStorageServiceFactory(namespace).getNamespacedKey(key),
