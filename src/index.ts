@@ -15,12 +15,15 @@ export * from './helpers/dateAndTime/getFormattedDateRange';
 export * from './helpers/dateAndTime/getFormattedDates';
 export * from './helpers/dateAndTime/getFormattedTime';
 export * from './helpers/dateAndTime/getFormattedYear';
+export * from './helpers/dateAndTime/getWeekdaysForLocale';
 export * from './helpers/dateAndTime/getYYYYMMDDDate';
 export * from './helpers/dateAndTime/isValidDate';
 // numbers
 export * from './helpers/numbers/getFormattedCurrency';
 export * from './helpers/numbers/getFormattedNumber';
 export * from './helpers/numbers/getFormattedPercent';
+// openingHours
+export * from './helpers/openingHours/getFormattedOpeningHours';
 // phoneNumbers
 export * from './helpers/phoneNumbers/getDialCode';
 export * from './helpers/phoneNumbers/getFormattedPhoneNumber';

@@ -1076,10 +1076,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@codingnomad/eslint-config-cn@^0.1.10":
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/@codingnomad/eslint-config-cn/-/eslint-config-cn-0.1.10.tgz#61b79c899cba2babfb9a1c7fb422be328fdda739"
-  integrity sha512-xiCFmc4X/3ycRohqJzIriq7W7X3na8JbVwK2khUAs1grO530+JXso5psXto3erSUq73NBvZ2cHLVc4NR0+yMMA==
+"@codingnomad/eslint-config-cn@^0.1.12":
+  version "0.1.12"
+  resolved "https://registry.yarnpkg.com/@codingnomad/eslint-config-cn/-/eslint-config-cn-0.1.12.tgz#21b163a2eea3c5734df707fb4a62f316117a3aca"
+  integrity sha512-Oy+f4cN23EMBZ4Nxjfvb2kZP7iNQdCdojR/BKowext2Zzu40RkRg8ztAwwm/tkPA424p+K2KD9Y0mrlh38nGpA==
   dependencies:
     eslint "^8.30.0"
     eslint-config-airbnb "^19.0.4"

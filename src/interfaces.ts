@@ -10,9 +10,12 @@ export * from './helpers/dateAndTime/interfaces/GetFormattedDateProps';
 export * from './helpers/dateAndTime/interfaces/GetFormattedDateRangeProps';
 export * from './helpers/dateAndTime/interfaces/GetFormattedTimeProps';
 export * from './helpers/dateAndTime/interfaces/GetFormattedYearProps';
+export * from './helpers/dateAndTime/interfaces/GetWeekdaysForLocaleProps';
 // numbers
 export * from './helpers/numbers/interfaces/GetFormattedCurrencyProps';
 export * from './helpers/numbers/interfaces/GetFormattedNumberProps';
 export * from './helpers/numbers/interfaces/GetFormattedPercentProps';
+// openingHours
+export * from './helpers/openingHours/interfaces/GetFormattedOpeningHoursProps';
 // phoneNumbers
 export * from './helpers/phoneNumbers/interfaces/GetFormattedPhoneNumberProps';

@@ -29,6 +29,12 @@ export * from './helpers/numbers/types/FormattedNumberOptionsType';
 export * from './helpers/numbers/types/FormattedPercentOptionsType';
 export * from './helpers/numbers/types/MaximumFractionDigitsType';
 export * from './helpers/numbers/types/MinimumFractionDigitsType';
+// openingHours
+export * from './helpers/openingHours/types/DayOfWeek';
+export * from './helpers/openingHours/types/FormattedOpeningHours';
+export * from './helpers/openingHours/types/FormattedOpeningHoursGroup';
+export * from './helpers/openingHours/types/OpeningHours';
+export * from './helpers/openingHours/types/TimeRange';
 // -------------------------------------------------------------------------- //
 // STORAGE ------------------------------------------------------------------ //
 // -------------------------------------------------------------------------- //
