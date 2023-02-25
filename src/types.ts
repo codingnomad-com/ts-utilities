@@ -30,6 +30,13 @@ export * from './helpers/numbers/types/FormattedPercentOptionsType';
 export * from './helpers/numbers/types/MaximumFractionDigitsType';
 export * from './helpers/numbers/types/MinimumFractionDigitsType';
 // -------------------------------------------------------------------------- //
+// STORAGE ------------------------------------------------------------------ //
+// -------------------------------------------------------------------------- //
+// localStorage
+export * from './storage/localStorage/types/LocalStorageService';
+// sessionStorage
+export * from './storage/sessionStorage/types/SessionStorageService';
+// -------------------------------------------------------------------------- //
 // GLOBALS ------------------------------------------------------------------ //
 // -------------------------------------------------------------------------- //
 export * from './types/LocalesType';
