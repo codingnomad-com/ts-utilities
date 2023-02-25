@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.15](https://github.com/codingnomad-com/ts-utilities/compare/v0.0.14...v0.0.15) (2023-02-25)
+
+
+### Bug Fixes
+
+* **storage:** adjusted value type ([b846abb](https://github.com/codingnomad-com/ts-utilities/commit/b846abb2869c69d29de9cfc9a2d0e69813a6c689))
+
 ### [0.0.14](https://github.com/codingnomad-com/ts-utilities/compare/v0.0.13...v0.0.14) (2023-02-25)
 
 
