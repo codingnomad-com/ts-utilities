@@ -1,6 +1,6 @@
-// RETURNS: 12.235,53 €
-
 import { GetFormattedCurrencyProps } from './interfaces/GetFormattedCurrencyProps';
+
+// RETURNS: 12.235,53 €
 
 export const getFormattedCurrency = (
   props: GetFormattedCurrencyProps,
