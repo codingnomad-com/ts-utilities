@@ -1,7 +1,9 @@
-import { LocalesType } from '../../../types/LocalesType';
+import { Locale } from '../../../types/Locale';
+import { TimeZone } from './TimeZone';
 import { YearFormatType } from './YearFormatType';
 
 export type FormattedYearOptionsType = {
+  locale?: Locale;
+  timeZone?: TimeZone;
   yearFormat?: YearFormatType;
-  locale?: LocalesType;
 };

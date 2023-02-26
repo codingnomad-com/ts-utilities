@@ -1,6 +1,6 @@
-import { LocalesType } from '../../../types/LocalesType';
+import { Locale } from '../../../types/Locale';
 
 export interface GetWeekdaysForLocaleProps {
-  locale: LocalesType;
+  locale: Locale;
   short?: boolean;
 }

@@ -1,9 +1,9 @@
 import { GetWeekdaysForLocaleProps } from './interfaces/GetWeekdaysForLocaleProps';
 
-// RETURNS: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-// RETURNS: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thurstday', 'Friday', 'Saturday']
-// RETURNS: ['So', 'Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa']
-// RETURNS: ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samatsg']
+// RETURNS: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+// RETURNS: ['Monday', 'Tuesday', 'Wednesday', 'Thurstday', 'Friday', 'Saturday', 'Sunday']
+// RETURNS: ['Mo', 'Di', 'Mi', 'Do', 'Fr', 'Sa', 'So']
+// RETURNS: ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samatsg', 'Sonntag']
 
 export const getWeekdaysForLocale = (
   props: GetWeekdaysForLocaleProps,

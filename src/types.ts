@@ -19,6 +19,7 @@ export * from './helpers/dateAndTime/types/HourFormatType';
 export * from './helpers/dateAndTime/types/MinuteFormatType';
 export * from './helpers/dateAndTime/types/MonthFormatType';
 export * from './helpers/dateAndTime/types/SecondFormatType';
+export * from './helpers/dateAndTime/types/TimeZone';
 export * from './helpers/dateAndTime/types/WeekdayFormatType';
 export * from './helpers/dateAndTime/types/YearFormatType';
 // numbers
@@ -45,5 +46,5 @@ export * from './storage/sessionStorage/types/SessionStorageService';
 // -------------------------------------------------------------------------- //
 // GLOBALS ------------------------------------------------------------------ //
 // -------------------------------------------------------------------------- //
-export * from './types/LocalesType';
+export * from './types/Locale';
 export * from './types/Maybe';

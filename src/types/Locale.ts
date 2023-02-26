@@ -1,4 +1,4 @@
-export type LocalesType =
+export type Locale =
   | 'ar-SA'
   | 'cs-CZ'
   | 'da-DK'

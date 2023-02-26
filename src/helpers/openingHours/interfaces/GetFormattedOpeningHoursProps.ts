@@ -1,8 +1,8 @@
-import { LocalesType } from '../../../types/LocalesType';
+import { Locale } from '../../../types/Locale';
 import { OpeningHours } from '../types/OpeningHours';
 
 export interface GetFormattedOpeningHoursProps {
-  locale: LocalesType;
+  locale: Locale;
   openingHours: OpeningHours[];
   shortWeekdays?: boolean;
   withSpaces?: boolean;

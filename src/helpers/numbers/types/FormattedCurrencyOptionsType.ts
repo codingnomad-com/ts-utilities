@@ -1,4 +1,4 @@
-import { LocalesType } from '../../../types/LocalesType';
+import { Locale } from '../../../types/Locale';
 import { CurrencyDisplayType } from './CurrencyDisplayType';
 import { CurrencyType } from './CurrencyType';
 import { MaximumFractionDigitsType } from './MaximumFractionDigitsType';
@@ -10,5 +10,5 @@ export type FormattedCurrencyOptionsType = {
   useGrouping?: boolean;
   minimumFractionDigits?: MinimumFractionDigitsType;
   maximumFractionDigits?: MaximumFractionDigitsType;
-  locale?: LocalesType;
+  locale?: Locale;
 };
