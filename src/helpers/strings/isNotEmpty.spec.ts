@@ -24,7 +24,7 @@ test('returns false if value is empty', async () => {
 test('returns true if value contains only whitespaces', async () => {
   const valueIsNotEmpty = isNotEmpty('      ');
 
-  expect(valueIsNotEmpty).toBeFalsy();
+  expect(valueIsNotEmpty).toBeTruthy();
 });
 
 test('returns true if value contains any characters', async () => {

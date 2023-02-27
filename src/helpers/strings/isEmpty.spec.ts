@@ -36,5 +36,5 @@ test('returns false if value contains any characters', async () => {
 test('returns false if value contains strign with 0', async () => {
   const valueIsEmpty = isEmpty('0');
 
-  expect(valueIsEmpty).toBeTruthy();
+  expect(valueIsEmpty).toBeFalsy();
 });
