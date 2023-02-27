@@ -27,6 +27,10 @@ export * from './helpers/openingHours/getFormattedOpeningHours';
 // phoneNumbers
 export * from './helpers/phoneNumbers/getDialCode';
 export * from './helpers/phoneNumbers/getFormattedPhoneNumber';
+// strings
+export * from './helpers/strings/isBlank';
+export * from './helpers/strings/isNotBlank';
+export * from './helpers/strings/obfuscateEmail';
 // token
 export * from './helpers/token/getTokenValues';
 // -------------------------------------------------------------------------- //

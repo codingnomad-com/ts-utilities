@@ -19,3 +19,5 @@ export * from './helpers/numbers/interfaces/GetFormattedPercentProps';
 export * from './helpers/openingHours/interfaces/GetFormattedOpeningHoursProps';
 // phoneNumbers
 export * from './helpers/phoneNumbers/interfaces/GetFormattedPhoneNumberProps';
+// strings
+export * from './helpers/strings/interfaces/ObfuscateEmailProps';
