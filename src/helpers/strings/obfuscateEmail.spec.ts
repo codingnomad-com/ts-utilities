@@ -27,24 +27,24 @@ test('returns undefined if email does not conatain @', async () => {
   expect(obfuscatedEmail).toBeUndefined();
 });
 
-test('returns "hel***@coding-nomad.com"', async () => {
+test('returns "h***@coding-nomad.com"', async () => {
   const obfuscatedEmail = obfuscateEmail('hello@coding-nomad.com');
 
-  expect(obfuscatedEmail).toBe('hel***@coding-nomad.com');
+  expect(obfuscatedEmail).toBe('h***@coding-nomad.com');
 });
 
-test('returns "he***@coding-nomad.com" even when options object is empty', async () => {
+test('returns "h***@coding-nomad.com" even when options object is empty', async () => {
   const obfuscatedEmail = obfuscateEmail('hello@coding-nomad.com', {});
 
-  expect(obfuscatedEmail).toBe('hel***@coding-nomad.com');
+  expect(obfuscatedEmail).toBe('h***@coding-nomad.com');
 });
 
-test('returns "hel***@cod***.com"', async () => {
+test('returns "h***@cod***.com"', async () => {
   const obfuscatedEmail = obfuscateEmail('hello@coding-nomad.com', {
     obfuscateDomainname: true,
   });
 
-  expect(obfuscatedEmail).toBe('hel***@cod***.com');
+  expect(obfuscatedEmail).toBe('h***@cod***.com');
 });
 
 test('returns "hello@cod***.com"', async () => {
@@ -58,7 +58,6 @@ test('returns "hello@cod***.com"', async () => {
 
 test('returns "he***@coding***.com"', async () => {
   const obfuscatedEmail = obfuscateEmail('hello@coding-nomad.com', {
-    obfuscateUsername: false,
     obfuscateDomainname: true,
     visibleCharsOfUsername: 2,
     visibleCharsOfDomainname: 6,
@@ -71,7 +70,8 @@ test('returns full email when the number of visible characters is greater than t
   const obfuscatedEmail = obfuscateEmail('hello@coding-nomad.com', {
     obfuscateDomainname: true,
     visibleCharsOfUsername: 10,
-    visibleCharsOfDomainname: 10,
+    visibleCharsOfDomainname: 20,
   });
+
   expect(obfuscatedEmail).toBe('hello@coding-nomad.com');
 });
