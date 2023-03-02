@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.21](https://github.com/codingnomad-com/ts-utilities/compare/v0.0.20...v0.0.21) (2023-03-02)
+
+
+### Bug Fixes
+
+* **dateandtime:** fixed missing timeZone prop ([c2aea78](https://github.com/codingnomad-com/ts-utilities/commit/c2aea784975bd42ebe19b83f3c128e76afaa10d3))
+
 ### [0.0.20](https://github.com/codingnomad-com/ts-utilities/compare/v0.0.19...v0.0.20) (2023-02-27)
 
 
