@@ -19,7 +19,7 @@ export const getFormattedDateFull = (
       locale = 'de-DE',
       timeZone,
     } = options || {};
-    
+
     const formatOptions = {
       weekday: weekdayFormat,
       day: dayFormat,

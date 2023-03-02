@@ -15,8 +15,7 @@ export const getFormattedYear = (
       locale = 'de-DE',
       timeZone,
     } = options || {};
-    
-    
+
     const formatOptions = {
       year: yearFormat,
       timeZone,

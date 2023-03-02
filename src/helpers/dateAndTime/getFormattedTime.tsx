@@ -18,7 +18,7 @@ export const getFormattedTime = (
       locale = 'de-DE',
       timeZone,
     } = options || {};
-    
+
     const formatOptions = {
       hour: hourFormat,
       minute: minuteFormat,

@@ -12,6 +12,7 @@ export const getFormattedDateRange = (
   props: GetFormattedDateRangeProps,
 ): string | undefined => {
   const { dateNormalOptions, endDate, startDate, withTime } = props;
+  const { timeZone } = dateNormalOptions;
 
   if (startDate) {
     let formattedStartTime;
@@ -19,6 +20,7 @@ export const getFormattedDateRange = (
 
     const formattedTimeOptions: FormattedTimeOptionsType = {
       secondFormat: undefined,
+      timeZone,
     };
 
     const formattedStartDate = getFormattedDate({
