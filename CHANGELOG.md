@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.22](https://github.com/codingnomad-com/ts-utilities/compare/v0.0.21...v0.0.22) (2023-03-02)
+
+
+### Bug Fixes
+
+* **dateandtime:** fixed getFormattedDateRange ([cee7e6a](https://github.com/codingnomad-com/ts-utilities/commit/cee7e6ac3eb5e4556d38def209bf791555bafd78))
+
 ### [0.0.21](https://github.com/codingnomad-com/ts-utilities/compare/v0.0.20...v0.0.21) (2023-03-02)
 
 
