@@ -16,12 +16,14 @@ export const getFormattedDate = (
       monthFormat = '2-digit',
       yearFormat = 'numeric',
       locale = 'de-DE',
+      timeZone,
     } = options || {};
 
     const formatOptions = {
       day: dayFormat,
       month: monthFormat,
       year: yearFormat,
+      timeZone,
     };
 
     return new Intl.DateTimeFormat(locale, formatOptions).format(date);

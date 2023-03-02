@@ -15,12 +15,14 @@ export const getFormattedDateLong = (
       monthFormat = 'long',
       yearFormat = 'numeric',
       locale = 'de-DE',
+      timeZone,
     } = options || {};
 
     const formatOptions = {
       day: dayFormat,
       month: monthFormat,
       year: yearFormat,
+      timeZone,
     };
 
     return new Intl.DateTimeFormat(locale, formatOptions).format(date);

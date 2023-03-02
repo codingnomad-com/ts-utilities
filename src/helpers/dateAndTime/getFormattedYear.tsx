@@ -10,10 +10,16 @@ export const getFormattedYear = (
   if (timestamp) {
     const date = new Date(timestamp);
 
-    const { yearFormat = 'numeric', locale = 'de-DE' } = options || {};
-
+    const {
+      yearFormat = 'numeric',
+      locale = 'de-DE',
+      timeZone,
+    } = options || {};
+    
+    
     const formatOptions = {
       year: yearFormat,
+      timeZone,
     };
 
     return new Intl.DateTimeFormat(locale, formatOptions).format(date);

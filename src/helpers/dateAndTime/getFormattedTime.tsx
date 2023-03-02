@@ -16,13 +16,15 @@ export const getFormattedTime = (
       secondFormat,
       hour12 = false,
       locale = 'de-DE',
+      timeZone,
     } = options || {};
-
+    
     const formatOptions = {
       hour: hourFormat,
       minute: minuteFormat,
       second: secondFormat,
       hour12,
+      timeZone,
     };
 
     return new Intl.DateTimeFormat(locale, formatOptions).format(date);
