@@ -1,9 +1,10 @@
 name: Preflight
+
 on:
   pull_request:
     branches: [main]
-  push:
-    branches: [main]
+  workflow_call:
+
 jobs:
   eslint:
     name: ESLint
@@ -18,6 +19,7 @@ jobs:
         run: yarn
       - name: ESLint
         run: yarn lint
+
   typecheck:
     name: Typecheck
     timeout-minutes: 60
@@ -31,6 +33,7 @@ jobs:
         run: yarn
       - name: TypeScript Typecheck
         run: yarn tsc
+
   playwright:
     name: Playwright
     timeout-minutes: 60

@@ -1,14 +1,16 @@
 name: Publish
+
 on:
   push:
     branches: [main]
-  workflow_run:
-    workflows: ['Release']
-    types:
-      - completed
+
 jobs:
+  release:
+    uses: ./.github/workflows/release.yml
+
   publish:
     name: Publish
+    needs: release
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
@@ -19,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: yarn
       - name: Build
-        run: yarn build
+        run: yarn ci:build
       - name: Publish
         run: npm publish
         env:
