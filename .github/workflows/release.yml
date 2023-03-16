@@ -5,38 +5,38 @@ on:
     branches: [main]
 
 jobs:
-  eslint:
-    name: ESLint
+  eslint3:
+    name: ESLint3
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
       - uses: codingnomad-com/eslint
 
-  typecheck:
-    name: Typecheck
+  typecheck3:
+    name: Typecheck3
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
       - uses: codingnomad-com/typecheck
 
-  playwright:
-    name: Playwright
+  playwright3:
+    name: Playwright3
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
       - uses: codingnomad-com/playwright
 
-  release:
-    name: Release
-    needs: ['eslint', 'typecheck', 'playwright']
+  release3:
+    name: Release3
+    needs: ['eslint3', 'typecheck3', 'playwright3']
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
       - uses: codingnomad-com/release
 
-  publish:
-    name: Publish
-    needs: ['eslint', 'typecheck', 'playwright', 'release']
+  publish3:
+    name: Publish3
+    needs: ['eslint3', 'typecheck3', 'playwright3', 'release3']
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
