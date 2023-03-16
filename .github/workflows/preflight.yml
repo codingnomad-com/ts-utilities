@@ -10,18 +10,18 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: codingnomad-com/github-workflow/.github/actions/eslint@main
+      - uses: codingnomad-com/eslint
 
   typecheck:
     name: Typecheck
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: codingnomad-com/typecheck@main
+      - uses: codingnomad-com/typecheck
 
   playwright:
     name: Playwright
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: codingnomad-com/github-workflow/playwright@main
+      - uses: codingnomad-com/playwright

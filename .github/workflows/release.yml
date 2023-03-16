@@ -10,21 +10,21 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: codingnomad-com/github-workflow/eslint@main
+      - uses: codingnomad-com/eslint
 
   typecheck:
     name: Typecheck
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: codingnomad-com/github-workflow/typecheck@main
+      - uses: codingnomad-com/typecheck
 
   playwright:
     name: Playwright
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: codingnomad-com/github-workflow/playwright@main
+      - uses: codingnomad-com/playwright
 
   release:
     name: Release
@@ -32,7 +32,7 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: codingnomad-com/github-workflow/release@main
+      - uses: codingnomad-com/release
 
   publish:
     name: Publish
@@ -40,4 +40,4 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: codingnomad-com/github-workflow/publish@main
+      - uses: codingnomad-com/publish
