@@ -10,7 +10,7 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: codingnomad-com/eslint@main
+      - uses: codingnomad-com/github-workflow/.github/actions/eslint@main
 
   typecheck:
     name: Typecheck
