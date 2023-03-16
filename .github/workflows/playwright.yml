@@ -1,9 +1,11 @@
-name: Pull Request
+name: Playwright
 on:
   pull_request:
     branches: [main]
+  push:
+    branches: [main]
 jobs:
-  preflight:
+  Playwright:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
@@ -13,10 +15,6 @@ jobs:
           node-version: 16
       - name: Install dependencies
         run: yarn
-      - name: ESLint
-        run: yarn lint
-      - name: TypeScript Typecheck
-        run: yarn tsc
       - name: Install Playwright Browsers
         run: yarn playwright install --with-deps
       - name: Run Playwright tests
