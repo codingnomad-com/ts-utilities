@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### 0.0.23 (2023-03-16)
 
+### 0.0.23 (2023-03-16)
+
 ### [0.0.22](https://github.com/codingnomad-com/ts-utilities/compare/v0.0.21...v0.0.22) (2023-03-02)
 
 
