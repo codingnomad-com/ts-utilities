@@ -5,23 +5,23 @@ on:
     branches: [main]
 
 jobs:
-  eslint2:
-    name: ESLint2
+  eslint:
+    name: ESLint
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: codingnomad-com/eslint
+      - uses: codingnomad-com/eslint@main
 
-  typecheck2:
-    name: Typecheck2
+  typecheck:
+    name: Typecheck
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: codingnomad-com/typecheck
+      - uses: codingnomad-com/typecheck@main
 
-  playwright2:
-    name: Playwright2
+  playwright:
+    name: Playwright
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: codingnomad-com/playwright
+      - uses: codingnomad-com/playwright@main

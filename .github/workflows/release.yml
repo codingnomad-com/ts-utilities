@@ -5,41 +5,41 @@ on:
     branches: [main]
 
 jobs:
-  eslint3:
-    name: ESLint3
+  eslint:
+    name: ESLint
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: codingnomad-com/eslint
+      - uses: codingnomad-com/eslint@main
 
-  typecheck3:
-    name: Typecheck3
+  typecheck:
+    name: Typecheck
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: codingnomad-com/typecheck
+      - uses: codingnomad-com/typecheck@main
 
-  playwright3:
-    name: Playwright3
+  playwright:
+    name: Playwright
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: codingnomad-com/playwright
+      - uses: codingnomad-com/playwright@main
 
-  release3:
-    name: Release3
-    needs: ['eslint3', 'typecheck3', 'playwright3']
+  release:
+    name: Release
+    needs: ['eslint', 'typecheck', 'playwright']
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: codingnomad-com/release
+      - uses: codingnomad-com/release@main
 
-  publish3:
-    name: Publish3
-    needs: ['eslint3', 'typecheck3', 'playwright3', 'release3']
+  publish:
+    name: Publish
+    needs: ['eslint', 'typecheck', 'playwright', 'release']
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: codingnomad-com/publish
+      - uses: codingnomad-com/publish@main
         with:
           npm_token: ${{ secrets.NPM_TOKEN }}
