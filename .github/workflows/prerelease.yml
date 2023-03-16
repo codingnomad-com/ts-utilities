@@ -1,8 +1,8 @@
-name: Preflight
+name: Prerelease
 
 on:
   pull_request:
-    branches: [main]
+    branches: [prerelease]
 
 jobs:
   eslint:
