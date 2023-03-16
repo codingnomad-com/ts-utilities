@@ -1,11 +1,12 @@
 name: Publish
 on:
-  push:
-    tags:
-      - '*'
-      - '**'
+  workflow_run:
+    workflows: ['Release']
+    types:
+      - completed
 jobs:
   publish:
+    name: Publish
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
