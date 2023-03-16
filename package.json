@@ -1,7 +1,7 @@
 {
   "name": "@codingnomad/ts-utilities",
   "version": "0.0.23",
-  "description": "Contains all sorts of global helper functions and data objects.",
+  "description": "Contains all sorts of global helper functions and data objects",
   "repository": "github:codingnomad-com/ts-utilities",
   "author": "Manuel Bachl | Coding Nomad <manuel@coding-nomad.com> (https://coding-nomad.com)",
   "homepage": "https://coding-nomad.com",
