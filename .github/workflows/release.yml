@@ -10,21 +10,21 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: codingnomad-com/eslint@main
+      - uses: codingnomad-com/github-workflow/.github/actions/eslint@main
 
   typecheck:
     name: Typecheck
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: codingnomad-com/typecheck@main
+      - uses: codingnomad-com/github-workflow/.github/actions/typecheck@main
 
   playwright:
     name: Playwright
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: codingnomad-com/playwright@main
+      - uses: codingnomad-com/github-workflow/.github/actions/playwright@main
 
   release:
     name: Release
@@ -32,7 +32,7 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: codingnomad-com/release@main
+      - uses: codingnomad-com/github-workflow/.github/actions/release@main
 
   publish:
     name: Publish
@@ -40,6 +40,6 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: codingnomad-com/publish@main
+      - uses: codingnomad-com/github-workflow/.github/actions/publish@main
         with:
           npm_token: ${{ secrets.NPM_TOKEN }}

@@ -17,11 +17,11 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: codingnomad-com/typecheck@main
+      - uses: codingnomad-com/github-workflow/.github/actions/typecheck@main
 
   playwright:
     name: Playwright
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: codingnomad-com/playwright@main
+      - uses: codingnomad-com/github-workflow/.github/actions/playwright@main
