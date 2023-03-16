@@ -18,7 +18,9 @@
     "test:codegen": "playwright codegen",
     "preflight": "yarn lint && yarn tsc && yarn test",
     "commit": "yarn preflight && git-cz",
-    "commit:skip-preflight": "git-cz"
+    "commit:skip-preflight": "git-cz",
+    "ci:release": "standard-version",
+    "ci:release:tags": "git push --follow-tags origin main"
   },
   "dependencies": {
     "@types/node": "18.15.3",

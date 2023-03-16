@@ -32,6 +32,6 @@ jobs:
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
       - name: Semantic versioning
-        run: yarn release
+        run: yarn ci:release
       - name: Tag release
-        run: yarn release:tags
+        run: yarn ci:release:tags
