@@ -1,6 +1,6 @@
 {
   "name": "@codingnomad/ts-utilities",
-  "version": "0.0.23",
+  "version": "0.0.22",
   "description": "Contains all sorts of global helper functions and data objects",
   "repository": "github:codingnomad-com/ts-utilities",
   "author": "Manuel Bachl | Coding Nomad <manuel@coding-nomad.com> (https://coding-nomad.com)",
@@ -20,7 +20,8 @@
     "commit": "yarn preflight && git-cz",
     "commit:skip-preflight": "git-cz",
     "ci:release": "standard-version",
-    "ci:release:tags": "git push --follow-tags origin main"
+    "ci:release:tags": "git push --follow-tags origin main",
+    "ci:build": "rimraf dist && node esbuild.config.mjs && tsc --outDir dist"
   },
   "dependencies": {
     "@types/node": "18.15.3",
