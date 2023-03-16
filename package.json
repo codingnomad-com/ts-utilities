@@ -19,8 +19,6 @@
     "preflight": "yarn lint && yarn tsc && yarn test",
     "commit": "yarn preflight && git-cz",
     "commit:skip-preflight": "git-cz",
-    "ci:release": "standard-version",
-    "ci:release:tags": "git pull && git push --follow-tags origin main",
     "ci:build": "rimraf dist && node esbuild.config.mjs && tsc --outDir dist"
   },
   "dependencies": {
