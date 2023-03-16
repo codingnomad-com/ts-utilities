@@ -1,29 +1,45 @@
 name: Release
 
 on:
-  workflow_call:
-  workflow_dispatch:
+  push:
+    branches: [main]
 
 jobs:
-  preflight:
-    uses: ./.github/workflows/preflight.yml
-
-  publish:
-    name: Publish
+  eslint:
+    name: ESLint
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: codingnomad-com/eslint
+
+  typecheck:
+    name: Typecheck
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+      - uses: codingnomad-com/typecheck
+
+  playwright:
+    name: Playwright
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+      - uses: codingnomad-com/playwright
+
+  release:
+    name: Release
+    needs: ['eslint', 'typecheck', 'playwright']
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+      - uses: codingnomad-com/release
+
+  publish:
+    name: Publish
+    needs: ['eslint', 'typecheck', 'playwright', 'release']
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+      - uses: codingnomad-com/publish
         with:
-          node-version: 16
-      - name: Install dependencies
-        run: yarn
-      - name: Configure committer
-        run: |
-          git config user.name "GitHub Actions Bot"
-          git config user.email "<>"
-      - name: Semantic versioning
-        run: yarn ci:release
-      - name: Tag release
-        run: yarn ci:release:tags
+          npm_token: ${{ secrets.NPM_TOKEN }}
