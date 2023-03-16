@@ -22,7 +22,7 @@ export const SessionStorageServiceFactory = (
     try {
       return window.sessionStorage.setItem(
         SessionStorageServiceFactory(namespace).getNamespacedKey(key),
-        JSON.stringify(value),
+        value,
       );
     } catch {
       return undefined;

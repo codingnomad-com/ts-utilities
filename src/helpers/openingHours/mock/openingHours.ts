@@ -2,7 +2,7 @@ import { OpeningHours } from '../types/OpeningHours';
 
 export const openingHours: OpeningHours[] = [
   {
-    dayOfWeek: 0, // wednesday
+    dayOfWeek: 0, // monday
     hours: [
       {
         from: '09:30',
