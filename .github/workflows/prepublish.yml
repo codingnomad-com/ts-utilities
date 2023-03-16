@@ -27,6 +27,10 @@ jobs:
           name: playwright-report
           path: playwright-report/
           retention-days: 30
+      - name: Configure committer
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
       - name: Semantic versioning
         run: yarn release
       - name: Tag release
