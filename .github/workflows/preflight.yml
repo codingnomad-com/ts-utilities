@@ -1,4 +1,4 @@
-name: Playwright
+name: Preflight
 on:
   pull_request:
     branches: [main]
@@ -25,3 +25,27 @@ jobs:
           name: playwright-report
           path: playwright-report/
           retention-days: 30
+  ESLint:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Install dependencies
+        run: yarn
+      - name: ESLint
+        run: yarn lint
+  Typecheck:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Install dependencies
+        run: yarn
+      - name: TypeScript Typecheck
+        run: yarn tsc
