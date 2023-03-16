@@ -1,7 +1,7 @@
 name: Release
 on:
   workflow_run:
-    workflows: ['ESLint', 'Typecheck', 'Playwright']
+    workflows: ['Publish']
     types:
       - completed
 jobs:
