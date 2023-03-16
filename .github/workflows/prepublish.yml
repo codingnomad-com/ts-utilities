@@ -1,11 +1,9 @@
-name: Playwright Tests
+name: Prepublish
 on:
   push:
     branches: [main]
-  pull_request:
-    branches: [main]
 jobs:
-  test:
+  preflight:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
@@ -15,6 +13,10 @@ jobs:
           node-version: 16
       - name: Install dependencies
         run: yarn
+      - name: ESLint
+        run: yarn lint
+      - name: TypeScript Typecheck
+        run: yarn tsc
       - name: Install Playwright Browsers
         run: yarn playwright install --with-deps
       - name: Run Playwright tests
@@ -25,3 +27,7 @@ jobs:
           name: playwright-report
           path: playwright-report/
           retention-days: 30
+      - name: Semantic versioning
+        run: yarn release
+      - name: Tag release
+        run: yarn release:tags
