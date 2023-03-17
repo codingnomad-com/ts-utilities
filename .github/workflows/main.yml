@@ -14,13 +14,24 @@ jobs:
         with:
           npm_token: ${{ secrets.NPM_TOKEN }}
 
-  postPublish:
-    name: Post publish
+  syncPrerelease:
+    name: Sync Prerelease
     needs: ['publish']
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: codingnomad-com/github-workflow/.github/actions/postPublish@main
+      - uses: codingnomad-com/github-workflow/.github/actions/syncPrerelease@main
+        with:
+          personal_access_token: ${{ secrets.PERSONAL_ACCESS_TOKEN}}
+          github_token: ${{ secrets.GITHUB_TOKEN}}
+
+  syncRelease:
+    name: Sync Release
+    needs: ['publish']
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    steps:
+      - uses: codingnomad-com/github-workflow/.github/actions/syncRelease@main
         with:
           personal_access_token: ${{ secrets.PERSONAL_ACCESS_TOKEN}}
           github_token: ${{ secrets.GITHUB_TOKEN}}
