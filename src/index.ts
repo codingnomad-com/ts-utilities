@@ -27,16 +27,19 @@ export * from './helpers/openingHours/getFormattedOpeningHours';
 // phoneNumbers
 export * from './helpers/phoneNumbers/getDialCode';
 export * from './helpers/phoneNumbers/getFormattedPhoneNumber';
+// random
+export * from './helpers/random/getRandomInteger';
 // strings
 export * from './helpers/strings/isBlank';
+export * from './helpers/strings/isDouble';
+export * from './helpers/strings/isEmpty';
+export * from './helpers/strings/isInteger';
 export * from './helpers/strings/isNotBlank';
+export * from './helpers/strings/isNotEmpty';
 export * from './helpers/strings/obfuscateEmail';
+export * from './helpers/strings/removeNonNumeric';
 // token
 export * from './helpers/token/getTokenValues';
-// -------------------------------------------------------------------------- //
-// INTERFACES --------------------------------------------------------------- //
-// -------------------------------------------------------------------------- //
-export * from './interfaces';
 // -------------------------------------------------------------------------- //
 // STORAGE ------------------------------------------------------------------ //
 // -------------------------------------------------------------------------- //
