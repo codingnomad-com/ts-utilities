@@ -22,7 +22,7 @@ test('returns undefined if email is empty', async () => {
 });
 
 test('returns undefined if email does not conatain @', async () => {
-  const obfuscatedEmail = obfuscateEmail('manuel.coding-nomad.com');
+  const obfuscatedEmail = obfuscateEmail('hello.coding-nomad.com');
 
   expect(obfuscatedEmail).toBeUndefined();
 });
