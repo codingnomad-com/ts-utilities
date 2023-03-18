@@ -1,10 +1,10 @@
 import { isEmpty } from './isEmpty';
 
-// RETURNS: false // isNotBlank(null)
-// RETURNS: false // isNotBlank(undefined)
-// RETURNS: false // isNotBlank('')
-// RETURNS: true // isNotBlank' ')
-// RETURNS: true // isNotBlank('a')
+// RETURNS: false // isNotEmpty(null)
+// RETURNS: false // isNotEmpty(undefined)
+// RETURNS: false // isNotEmpty('')
+// RETURNS: true // isNotEmpty(' ')
+// RETURNS: true // isNotEmpty('a')
 
 export const isNotEmpty = (value?: string | null): boolean => {
   return !isEmpty(value);
