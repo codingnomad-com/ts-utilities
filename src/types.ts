@@ -52,7 +52,8 @@ export * from './helpers/openingHours/types/TimeRange';
 // phoneNumbers
 export * from './helpers/phoneNumbers/interfaces/GetFormattedPhoneNumberProps';
 // random
-export * from './helpers/random/interfaces/MinMaxNumberConfig';
+export * from './helpers/random/interfaces/GetRandomIntegerProps';
+export * from './helpers/random/interfaces/GetRandomStringProps';
 // strings
 export * from './helpers/strings/interfaces/ObfuscateEmailProps';
 // -------------------------------------------------------------------------- //

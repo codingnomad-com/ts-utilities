@@ -1,10 +1,10 @@
-// RETURNS: 1...100 // randomInteger()
-// RETURNS: 5...10 // randomInteger({ min: 5, max: 10})
+// RETURNS: 1...100 // getRandomInteger()
+// RETURNS: 5...10 // getRandomInteger({ min: 5, max: 10})
 
-import { MinMaxNumberConfig } from './interfaces/MinMaxNumberConfig';
+import { GetRandomIntegerProps } from './interfaces/GetRandomIntegerProps';
 
 export const getRandomInteger = (
-  config: MinMaxNumberConfig = { min: 0, max: 100 },
+  config: GetRandomIntegerProps = { min: 0, max: 100 },
 ): number => {
   const min = config.min ?? 0;
   const max = config.max ?? 100;

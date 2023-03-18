@@ -29,6 +29,8 @@ export * from './helpers/phoneNumbers/getDialCode';
 export * from './helpers/phoneNumbers/getFormattedPhoneNumber';
 // random
 export * from './helpers/random/getRandomInteger';
+export * from './helpers/random/getRandomString';
+export * from './helpers/random/getRandomStringCustom';
 // strings
 export * from './helpers/strings/isBlank';
 export * from './helpers/strings/isDouble';
