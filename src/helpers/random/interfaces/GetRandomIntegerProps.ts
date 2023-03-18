@@ -1,4 +1,4 @@
-export interface MinMaxNumberConfig {
+export interface GetRandomIntegerProps {
   /**
    * @description
    * min value
