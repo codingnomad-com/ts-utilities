@@ -41,7 +41,7 @@
     "@commitlint/config-conventional": "17.4.4",
     "@playwright/test": "1.32.1",
     "@types/atob": "2.1.2",
-    "@typescript-eslint/parser": "5.56.0",
+    "@typescript-eslint/parser": "5.57.0",
     "commitizen": "4.3.0",
     "concurrently": "7.6.0",
     "cross-spawn": "7.0.3",
