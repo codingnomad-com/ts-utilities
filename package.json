@@ -1,6 +1,6 @@
 {
   "name": "@codingnomad/ts-utilities",
-  "version": "0.0.39",
+  "version": "0.0.40",
   "description": "Contains all sorts of global helper functions and data objects",
   "repository": "github:codingnomad-com/ts-utilities",
   "author": "Manuel Bachl | Coding Nomad <manuel@coding-nomad.com> (https://coding-nomad.com)",
