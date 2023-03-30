@@ -1,4 +1,4 @@
-import { Maybe } from '../../types/Maybe';
+import { Maybe } from '~/types/Maybe';
 import { GetFormattedDateProps } from './interfaces/GetFormattedDateProps';
 
 // RETURNS: 24.08.2021

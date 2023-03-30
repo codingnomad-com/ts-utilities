@@ -1,22 +1,26 @@
-import { GetFormattedYearProps } from './interfaces/GetFormattedYearProps';
+import { Maybe } from '~/types/Maybe';
+import { GetFormattedDateLongProps } from './interfaces/GetFormattedDateLongProps';
 
-// RETURNS: 2021
+// RETURNS: 25. August 2021
 
-export const getFormattedYear = (
-  props: GetFormattedYearProps,
-): string | undefined => {
+export const getFormattedDateLong = (
+  props: GetFormattedDateLongProps,
+): Maybe<string> => {
   const { timestamp, options } = props;
-
   if (timestamp) {
     const date = new Date(timestamp);
 
     const {
+      dayFormat = 'numeric',
+      monthFormat = 'long',
       yearFormat = 'numeric',
       locale = 'de-DE',
       timeZone,
     } = options || {};
 
     const formatOptions = {
+      day: dayFormat,
+      month: monthFormat,
       year: yearFormat,
       timeZone,
     };

@@ -1,4 +1,4 @@
-import { Locale } from '../../../types/Locale';
+import { Locale } from '~/types/Locale';
 import { TimeZone } from './TimeZone';
 import { YearFormatType } from './YearFormatType';
 

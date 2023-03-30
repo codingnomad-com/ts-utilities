@@ -1,4 +1,4 @@
-import { Locale } from '../../../types/Locale';
+import { Locale } from '~/types/Locale';
 
 export interface GetWeekdaysForLocaleProps {
   locale: Locale;

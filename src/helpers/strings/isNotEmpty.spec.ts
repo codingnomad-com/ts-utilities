@@ -4,7 +4,9 @@ import { isNotEmpty } from './isNotEmpty';
 test.describe.configure({ mode: 'parallel' });
 
 test('returns false if value is null', async () => {
-  const valueIsNotEmpty = isNotEmpty(null);
+  const value = null;
+
+  const valueIsNotEmpty = isNotEmpty(value);
 
   expect(valueIsNotEmpty).toBeFalsy();
 });
@@ -16,25 +18,33 @@ test('returns false if value is undefined', async () => {
 });
 
 test('returns false if value is empty', async () => {
-  const valueIsNotEmpty = isNotEmpty('');
+  const value = '';
+
+  const valueIsNotEmpty = isNotEmpty(value);
 
   expect(valueIsNotEmpty).toBeFalsy();
 });
 
 test('returns true if value contains only whitespaces', async () => {
-  const valueIsNotEmpty = isNotEmpty('      ');
+  const value = '      ';
+
+  const valueIsNotEmpty = isNotEmpty(value);
 
   expect(valueIsNotEmpty).toBeTruthy();
 });
 
 test('returns true if value contains any characters', async () => {
-  const valueIsNotEmpty = isNotEmpty('a');
+  const value = 'a';
+
+  const valueIsNotEmpty = isNotEmpty(value);
 
   expect(valueIsNotEmpty).toBeTruthy();
 });
 
 test('returns true if value contains strign with 0', async () => {
-  const valueIsNotEmpty = isNotEmpty('0');
+  const value = 'o';
+
+  const valueIsNotEmpty = isNotEmpty(value);
 
   expect(valueIsNotEmpty).toBeTruthy();
 });

@@ -1,6 +1,6 @@
-import { OpeningHours } from '../types/OpeningHours';
+import { OpeningHoursType } from '../types/OpeningHoursType';
 
-export const openingHours: OpeningHours[] = [
+export const openingHours: OpeningHoursType[] = [
   {
     dayOfWeek: 0, // monday
     hours: [

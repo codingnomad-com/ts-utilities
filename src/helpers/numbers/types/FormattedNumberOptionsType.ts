@@ -1,4 +1,4 @@
-import { Locale } from '../../../types/Locale';
+import { Locale } from '~/types/Locale';
 import { MaximumFractionDigitsType } from './MaximumFractionDigitsType';
 import { MinimumFractionDigitsType } from './MinimumFractionDigitsType';
 

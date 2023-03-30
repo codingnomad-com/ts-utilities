@@ -4,7 +4,9 @@ import { isInteger } from './isInteger';
 test.describe.configure({ mode: 'parallel' });
 
 test('returns false if value is null', async () => {
-  const valueIsInteger = isInteger(null);
+  const value = null;
+
+  const valueIsInteger = isInteger(value);
 
   expect(valueIsInteger).toBeFalsy();
 });
@@ -16,43 +18,57 @@ test('returns false if value is undefined', async () => {
 });
 
 test('returns false if value is empty', async () => {
-  const valueIsInteger = isInteger('');
+  const value = '';
+
+  const valueIsInteger = isInteger(value);
 
   expect(valueIsInteger).toBeFalsy();
 });
 
 test('returns false if value contains non numeric characters', async () => {
-  const valueIsInteger = isInteger('abc123');
+  const value = 'abc123';
+
+  const valueIsInteger = isInteger(value);
 
   expect(valueIsInteger).toBeFalsy();
 });
 
 test('returns false if value contains whitespace around numbers', async () => {
-  const valueIsInteger = isInteger(' 123 ');
+  const value = ' 123 ';
+
+  const valueIsInteger = isInteger(value);
 
   expect(valueIsInteger).toBeFalsy();
 });
 
 test('returns false if value contains . (dot)', async () => {
-  const valueIsInteger = isInteger('12.3');
+  const value = '12.3';
+
+  const valueIsInteger = isInteger(value);
 
   expect(valueIsInteger).toBeFalsy();
 });
 
 test('returns false if value contains , (comma)', async () => {
-  const valueIsInteger = isInteger('12,3');
+  const value = '12,3';
+
+  const valueIsInteger = isInteger(value);
 
   expect(valueIsInteger).toBeFalsy();
 });
 
 test('returns true if value contains only numeric characters', async () => {
-  const valueIsInteger = isInteger('123');
+  const value = '123';
+
+  const valueIsInteger = isInteger(value);
 
   expect(valueIsInteger).toBeTruthy();
 });
 
 test('returns false if value contains only but many numeric characters', async () => {
-  const valueIsInteger = isInteger('123456789123456789123456789');
+  const value = '987654321987654321987654321';
+
+  const valueIsInteger = isInteger(value);
 
   expect(valueIsInteger).toBeTruthy();
 });

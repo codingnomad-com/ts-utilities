@@ -1,18 +1,19 @@
-import { ObfuscateEmailProps } from './interfaces/ObfuscateEmailProps';
+import { Maybe } from '~/types/Maybe';
+import { ObfuscateEmailConfig } from './interfaces/ObfuscateEmailConfig';
 
 // RETURNS: hel***@cod***.com
 // RETURNS: hel***@coding-nomad.com
 // RETURNS: hello@cod***.com
 
 export const obfuscateEmail = (
-  email?: string | null,
-  config: ObfuscateEmailProps = {
+  email: string,
+  config: ObfuscateEmailConfig = {
     obfuscateUsername: true,
     obfuscateDomainname: false,
     visibleCharsOfUsername: 1,
     visibleCharsOfDomainname: 3,
   },
-): string | undefined => {
+): Maybe<string> => {
   const {
     obfuscateUsername = true,
     obfuscateDomainname = false,
@@ -38,5 +39,6 @@ export const obfuscateEmail = (
 
     return `${username}@${domainname}.${extension}`;
   }
+
   return undefined;
 };

@@ -1,4 +1,4 @@
-import { Maybe } from '../../../types/Maybe';
+import { Maybe } from '~/types/Maybe';
 import { FormattedYearOptionsType } from '../types/FormattedYearOptionsType';
 
 export interface GetFormattedYearProps {

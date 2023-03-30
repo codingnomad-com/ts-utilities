@@ -1,4 +1,4 @@
-import { Locale } from '../../../types/Locale';
+import { Locale } from '~/types/Locale';
 import { DayFormatType } from './DayFormatType';
 import { MonthFormatType } from './MonthFormatType';
 import { TimeZone } from './TimeZone';

@@ -1,4 +1,4 @@
-import { Maybe } from '../../../types/Maybe';
+import { Maybe } from '~/types/Maybe';
 import { FormattedNumberOptionsType } from '../types/FormattedNumberOptionsType';
 
 export interface GetFormattedNumberProps {

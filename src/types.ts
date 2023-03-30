@@ -47,7 +47,7 @@ export * from './helpers/openingHours/interfaces/GetFormattedOpeningHoursProps';
 export * from './helpers/openingHours/types/DayOfWeek';
 export * from './helpers/openingHours/types/FormattedOpeningHours';
 export * from './helpers/openingHours/types/FormattedOpeningHoursGroup';
-export * from './helpers/openingHours/types/OpeningHours';
+export * from './helpers/openingHours/types/OpeningHoursType';
 export * from './helpers/openingHours/types/TimeRange';
 // phoneNumbers
 export * from './helpers/phoneNumbers/interfaces/GetFormattedPhoneNumberProps';
@@ -55,7 +55,7 @@ export * from './helpers/phoneNumbers/interfaces/GetFormattedPhoneNumberProps';
 export * from './helpers/random/interfaces/GetRandomIntegerProps';
 export * from './helpers/random/interfaces/GetRandomStringProps';
 // strings
-export * from './helpers/strings/interfaces/ObfuscateEmailProps';
+export * from './helpers/strings/interfaces/ObfuscateEmailConfig';
 // -------------------------------------------------------------------------- //
 // STORAGE ------------------------------------------------------------------ //
 // -------------------------------------------------------------------------- //

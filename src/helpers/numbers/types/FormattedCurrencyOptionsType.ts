@@ -1,4 +1,4 @@
-import { Locale } from '../../../types/Locale';
+import { Locale } from '~/types/Locale';
 import { CurrencyDisplayType } from './CurrencyDisplayType';
 import { CurrencyType } from './CurrencyType';
 import { MaximumFractionDigitsType } from './MaximumFractionDigitsType';

@@ -1,4 +1,4 @@
-import { Locale } from '../../../types/Locale';
+import { Locale } from '~/types/Locale';
 import { HourFormatType } from './HourFormatType';
 import { MinuteFormatType } from './MinuteFormatType';
 import { SecondFormatType } from './SecondFormatType';
