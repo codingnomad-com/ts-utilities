@@ -1,6 +1,6 @@
 {
   "name": "@codingnomad/ts-utilities",
-  "version": "0.0.36",
+  "version": "0.0.40",
   "description": "Contains all sorts of global helper functions and data objects",
   "repository": "github:codingnomad-com/ts-utilities",
   "author": "Manuel Bachl | Coding Nomad <manuel@coding-nomad.com> (https://coding-nomad.com)",
@@ -36,7 +36,7 @@
     "@babel/core": "7.21.3",
     "@babel/plugin-syntax-flow": "7.18.6",
     "@babel/plugin-transform-react-jsx": "7.21.0",
-    "@codingnomad/eslint-config-cn": "0.1.13",
+    "@codingnomad/eslint-config-cn": "0.1.14",
     "@commitlint/cli": "17.5.0",
     "@commitlint/config-conventional": "17.4.4",
     "@playwright/test": "1.32.1",
