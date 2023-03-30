@@ -9,7 +9,7 @@ export const getFormattedPhoneNumber = (
 ): string => {
   const { areaCode, countryCode, number, showZero = false } = props;
 
-  const dialCode = getDialCode(countryCode);
+  const dialCode = getDialCode({ isoCode: countryCode });
 
   const zero = showZero ? '(0) ' : '';
 

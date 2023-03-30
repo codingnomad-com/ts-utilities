@@ -7,7 +7,7 @@ test('returns random string with 10 characters length and only containing abcDEF
   const length = 10;
   const allowedChars = 'abcDEF123';
 
-  const randomStringCustom = getRandomStringCustom(length, allowedChars);
+  const randomStringCustom = getRandomStringCustom({ length, allowedChars });
 
   expect(randomStringCustom).not.toBeNull();
   expect(randomStringCustom).not.toBeUndefined();
@@ -24,7 +24,7 @@ test('returns random string with 10 characters length and only containing a', as
   const length = 10;
   const allowedChars = 'a';
 
-  const randomStringCustom = getRandomStringCustom(length, allowedChars);
+  const randomStringCustom = getRandomStringCustom({ length, allowedChars });
 
   expect(randomStringCustom).not.toBeNull();
   expect(randomStringCustom).not.toBeUndefined();

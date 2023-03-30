@@ -1,4 +1,4 @@
-import { Maybe } from '../../../types/Maybe';
+import { Maybe } from '~/types/Maybe';
 import { FormattedDateNormalOptionsType } from '../types/FormattedDateNormalOptionsType';
 
 export interface GetFormattedDateProps {

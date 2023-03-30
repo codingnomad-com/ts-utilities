@@ -8,7 +8,7 @@ test('returns "2023-02-21"', async () => {
 
   const date = new Date(timestamp);
 
-  const formattedDate = getYYYYMMDDDate(date);
+  const formattedDate = getYYYYMMDDDate({ date });
 
   expect(formattedDate).toBe('2023-02-21');
 });

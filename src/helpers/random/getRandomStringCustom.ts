@@ -1,9 +1,11 @@
 import { getRandomInteger } from './getRandomInteger';
+import { GetRandomStringCustomProps } from './interfaces/GetRandomStringCustomProps';
 
 export const getRandomStringCustom = (
-  length: number,
-  allowedChars: string,
+  props: GetRandomStringCustomProps,
 ): string => {
+  const { length, allowedChars } = props;
+
   let value = '';
 
   for (let i = 0; i < length; i++) {

@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import { IsoCodeType } from '../../data/countries/types/IsoCodeType';
+import { IsoCodeType } from '~/data/countries/types/IsoCodeType';
 import { getFormattedPhoneNumber } from './getFormattedPhoneNumber';
 
 test.describe.configure({ mode: 'parallel' });

@@ -1,4 +1,4 @@
-import { Maybe } from '../../../types/Maybe';
+import { Maybe } from '~/types/Maybe';
 
 export type FormattedDatesReturnType = {
   dateNormal: Maybe<string>;

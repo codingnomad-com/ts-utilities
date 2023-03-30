@@ -1,5 +1,6 @@
 /* eslint-disable no-nested-ternary */
 
+import { Maybe } from '~/types/Maybe';
 import { GetFormattedAddressProps } from './interfaces/GetFormattedAddressProps';
 
 // RETURNS: Augsburger Straße 27, 58452 Witten
@@ -13,7 +14,7 @@ import { GetFormattedAddressProps } from './interfaces/GetFormattedAddressProps'
 
 export const getFormattedAddress = (
   props: GetFormattedAddressProps,
-): string | undefined => {
+): Maybe<string> => {
   const { address, multiline = false } = props;
   const { street, streetNumber, zipCode, city } = address;
 

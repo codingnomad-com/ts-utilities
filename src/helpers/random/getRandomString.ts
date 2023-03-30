@@ -38,5 +38,5 @@ export const getRandomString = (
   if (specialSimple) allowedChars += specialSimpleChars;
   if (specialAmbiguous) allowedChars += specialAmbiguousChars;
 
-  return getRandomStringCustom(length, allowedChars);
+  return getRandomStringCustom({ length, allowedChars });
 };

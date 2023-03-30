@@ -1,10 +1,11 @@
+import { Maybe } from '~/types/Maybe';
 import { GetFormattedNumberProps } from './interfaces/GetFormattedNumberProps';
 
 // RETURNS: 12.235,53
 
 export const getFormattedNumber = (
   props: GetFormattedNumberProps,
-): string | undefined => {
+): Maybe<string> => {
   const { value, options } = props;
 
   if (value) {

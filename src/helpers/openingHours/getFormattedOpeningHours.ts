@@ -2,7 +2,7 @@ import { getWeekdaysForLocale } from '../dateAndTime/getWeekdaysForLocale';
 import { GetFormattedOpeningHoursProps } from './interfaces/GetFormattedOpeningHoursProps';
 import { FormattedOpeningHours } from './types/FormattedOpeningHours';
 import { FormattedOpeningHoursGroup } from './types/FormattedOpeningHoursGroup';
-import { OpeningHours } from './types/OpeningHours';
+import { OpeningHoursType } from './types/OpeningHoursType';
 
 // RETURNS: [{ days: 'Mo & Di', times: '09:30 - 20:00 Uhr' }, { days: 'Mi', times: '09:30 - 19:00 Uhr' }, { days: 'Do - Sa', times: '09:30 - 20:00 Uhr' }]
 // RETURNS: [{ days: 'Montag & Dienstag', times: '09:30 - 20:00 Uhr' }, { days: 'Mittwoch', times: '09:30 - 19:00 Uhr' }, { days: 'Donnerstag - Samstag', times: '09:30 - 20:00 Uhr' }]
@@ -52,11 +52,11 @@ const groupDays = (
 };
 
 const formatDays = (
-  openingHoursDays: OpeningHours[],
+  openingHoursDays: OpeningHoursType[],
 ): FormattedOpeningHoursGroup[] => {
   let group = 0;
 
-  return openingHoursDays.map((openingHours: OpeningHours, i: number) => {
+  return openingHoursDays.map((openingHours: OpeningHoursType, i: number) => {
     if (!i) return { ...openingHours, group };
 
     if (!openingHours.hours?.length) {
