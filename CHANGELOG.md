@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.42 (2023-03-31)
+
+
+### Bug Fixes
+
+* **deps:** update dependency typescript to v5.0.3 ([0a0de55](https://github.com/codingnomad-com/ts-utilities/commit/0a0de551b6419be608303060c872e10a31074da6))
+
 ### 0.0.41 (2023-03-30)
 
 ### 0.0.36 (2023-03-26)
