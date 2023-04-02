@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.46 (2023-04-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/react to v18.0.32 ([d5fb30a](https://github.com/codingnomad-com/ts-utilities/commit/d5fb30acb1809df7be6cbc20f647496f7acf6ac6))
+
 ### 0.0.45 (2023-04-02)
 
 ### 0.0.44 (2023-04-01)
