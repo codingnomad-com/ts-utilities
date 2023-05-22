@@ -1,10 +1,10 @@
 import { Maybe } from '~/types/Maybe';
-import { GetFormattedDateFullProps } from './interfaces/GetFormattedDateFullProps';
+import { IGetFormattedDateFullProps } from './interfaces/IGetFormattedDateFullProps';
 
 // RETURNS: Dienstag, 25. August 2021
 
 export const getFormattedDateFull = (
-  props: GetFormattedDateFullProps,
+  props: IGetFormattedDateFullProps,
 ): Maybe<string> => {
   const { timestamp, options } = props;
 
@@ -33,3 +33,5 @@ export const getFormattedDateFull = (
 
   return undefined;
 };
+
+export default getFormattedDateFull;

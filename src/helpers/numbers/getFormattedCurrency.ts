@@ -1,10 +1,10 @@
 import { Maybe } from '~/types/Maybe';
-import { GetFormattedCurrencyProps } from './interfaces/GetFormattedCurrencyProps';
+import { IGetFormattedCurrencyProps } from './interfaces/IGetFormattedCurrencyProps';
 
 // RETURNS: 12.235,53 €
 
 export const getFormattedCurrency = (
-  props: GetFormattedCurrencyProps,
+  props: IGetFormattedCurrencyProps,
 ): Maybe<string> => {
   const { value, options } = props;
 
@@ -30,3 +30,5 @@ export const getFormattedCurrency = (
 
   return new Intl.NumberFormat(locale, formatOptions).format(valueToFormat);
 };
+
+export default getFormattedCurrency;

@@ -10,7 +10,7 @@
   "jsnext:main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "lint": "eslint src/**/*.{ts,tsx} --fix",
+    "lint": "eslint src/**/*.ts --fix",
     "test": "playwright test",
     "test:show-report": "npx playwright show-report",
     "test:chromium": "playwright test --project=chromium",

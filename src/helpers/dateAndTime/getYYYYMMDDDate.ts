@@ -1,10 +1,12 @@
 import { Maybe } from '~/types/Maybe';
-import { GetYYYYMMDDDateProps } from './interfaces/GetYYYYMMDDDateProps';
+import { IGetYYYYMMDDDateProps } from './interfaces/IGetYYYYMMDDDateProps';
 import { isValidDate } from './isValidDate';
 
 // RETURNS: 20210913
 
-export const getYYYYMMDDDate = (props: GetYYYYMMDDDateProps): Maybe<string> => {
+export const getYYYYMMDDDate = (
+  props: IGetYYYYMMDDDateProps,
+): Maybe<string> => {
   const { date } = props;
 
   if (!isValidDate({ date })) {
@@ -17,3 +19,5 @@ export const getYYYYMMDDDate = (props: GetYYYYMMDDDateProps): Maybe<string> => {
 
   return formattedDate.toISOString().split('T')[0];
 };
+
+export default getYYYYMMDDDate;

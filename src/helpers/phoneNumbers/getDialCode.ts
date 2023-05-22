@@ -1,11 +1,11 @@
 import { Countries } from '~/data/countries/Countries';
 import { CountryType } from '~/data/countries/types/CountryType';
 import { Maybe } from '~/types/Maybe';
-import { GetDialCodeProps } from './interfaces/GetDialCodeProps';
+import { IGetDialCodeProps } from './interfaces/IGetDialCodeProps';
 
 // RETURNS: +49
 
-export const getDialCode = (props: GetDialCodeProps): Maybe<string> => {
+export const getDialCode = (props: IGetDialCodeProps): Maybe<string> => {
   const { isoCode } = props;
 
   const selectedCountry = Countries.find(
@@ -18,3 +18,5 @@ export const getDialCode = (props: GetDialCodeProps): Maybe<string> => {
 
   return undefined;
 };
+
+export default getDialCode;

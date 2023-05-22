@@ -1,6 +1,6 @@
-import { IsValidDateProps } from './interfaces/IsValidDateProps';
+import { IIsValidDateProps } from './interfaces/IIsValidDateProps';
 
-export const isValidDate = (props: IsValidDateProps): boolean => {
+export const isValidDate = (props: IIsValidDateProps): boolean => {
   const { date } = props;
 
   return (
@@ -10,3 +10,5 @@ export const isValidDate = (props: IsValidDateProps): boolean => {
     false
   );
 };
+
+export default isValidDate;

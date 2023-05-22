@@ -1,11 +1,11 @@
 import { getDialCode } from './getDialCode';
-import { GetFormattedPhoneNumberProps } from './interfaces/GetFormattedPhoneNumberProps';
+import { IGetFormattedPhoneNumberProps } from './interfaces/IGetFormattedPhoneNumberProps';
 
 // RETURNS: +49 711 123456
 // RETURNS: +49 (0) 711 123456
 
 export const getFormattedPhoneNumber = (
-  props: GetFormattedPhoneNumberProps,
+  props: IGetFormattedPhoneNumberProps,
 ): string => {
   const { areaCode, countryCode, number, showZero = false } = props;
 
@@ -17,3 +17,5 @@ export const getFormattedPhoneNumber = (
 
   return `${dialCode} ${zero}${formattedAreaCode} ${number}`;
 };
+
+export default getFormattedPhoneNumber;

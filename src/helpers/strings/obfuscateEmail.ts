@@ -1,5 +1,5 @@
 import { Maybe } from '~/types/Maybe';
-import { ObfuscateEmailConfig } from './interfaces/ObfuscateEmailConfig';
+import { IObfuscateEmailConfig } from './interfaces/IObfuscateEmailConfig';
 
 // RETURNS: hel***@cod***.com
 // RETURNS: hel***@coding-nomad.com
@@ -7,7 +7,7 @@ import { ObfuscateEmailConfig } from './interfaces/ObfuscateEmailConfig';
 
 export const obfuscateEmail = (
   email: string,
-  config: ObfuscateEmailConfig = {
+  config: IObfuscateEmailConfig = {
     obfuscateUsername: true,
     obfuscateDomainname: false,
     visibleCharsOfUsername: 1,
@@ -42,3 +42,5 @@ export const obfuscateEmail = (
 
   return undefined;
 };
+
+export default obfuscateEmail;

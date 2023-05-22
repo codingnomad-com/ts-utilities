@@ -7,3 +7,5 @@ export const removeNonNumeric = (value?: string | null): string => {
 
   return value.replace(/\D/g, '');
 };
+
+export default removeNonNumeric;

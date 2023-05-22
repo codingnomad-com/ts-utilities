@@ -1,7 +1,7 @@
 import { Maybe } from '~/types/Maybe';
 import { getFormattedDate } from './getFormattedDate';
 import { getFormattedTime } from './getFormattedTime';
-import { GetFormattedDateRangeProps } from './interfaces/GetFormattedDateRangeProps';
+import { IGetFormattedDateRangeProps } from './interfaces/IGetFormattedDateRangeProps';
 import { FormattedTimeOptionsType } from './types/FormattedTimeOptionsType';
 
 // RETURNS: 01.01.2022 (startDate)
@@ -10,7 +10,7 @@ import { FormattedTimeOptionsType } from './types/FormattedTimeOptionsType';
 // RETURNS: 01.01.2022 - 14.01.2022
 
 export const getFormattedDateRange = (
-  props: GetFormattedDateRangeProps,
+  props: IGetFormattedDateRangeProps,
 ): Maybe<string> => {
   const { dateNormalOptions, endDate, startDate, withTime } = props;
   const { timeZone } = dateNormalOptions;
@@ -66,3 +66,5 @@ export const getFormattedDateRange = (
 
   return undefined;
 };
+
+export default getFormattedDateRange;

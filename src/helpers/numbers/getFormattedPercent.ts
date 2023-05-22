@@ -1,10 +1,10 @@
 import { Maybe } from '~/types/Maybe';
-import { GetFormattedPercentProps } from './interfaces/GetFormattedPercentProps';
+import { IGetFormattedPercentProps } from './interfaces/IGetFormattedPercentProps';
 
 // RETURNS: 12.235,53 %
 
 export const getFormattedPercent = (
-  props: GetFormattedPercentProps,
+  props: IGetFormattedPercentProps,
 ): Maybe<string> => {
   const { value, options } = props;
 
@@ -30,3 +30,5 @@ export const getFormattedPercent = (
 
   return undefined;
 };
+
+export default getFormattedPercent;

@@ -1,4 +1,4 @@
-import { GetWeekdaysForLocaleProps } from './interfaces/GetWeekdaysForLocaleProps';
+import { IGetWeekdaysForLocaleProps } from './interfaces/IGetWeekdaysForLocaleProps';
 
 // RETURNS: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
 // RETURNS: ['Monday', 'Tuesday', 'Wednesday', 'Thurstday', 'Friday', 'Saturday', 'Sunday']
@@ -6,7 +6,7 @@ import { GetWeekdaysForLocaleProps } from './interfaces/GetWeekdaysForLocaleProp
 // RETURNS: ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samatsg', 'Sonntag']
 
 export const getWeekdaysForLocale = (
-  props: GetWeekdaysForLocaleProps,
+  props: IGetWeekdaysForLocaleProps,
 ): string[] => {
   const { locale = 'en-US', short = false } = props;
 
@@ -20,3 +20,5 @@ export const getWeekdaysForLocale = (
     format(new Date(Date.UTC(2022, 1, day))),
   );
 };
+
+export default getWeekdaysForLocale;
