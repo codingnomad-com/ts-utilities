@@ -7,3 +7,5 @@
 export const isBlank = (value?: string | null): boolean => {
   return !value || value.trim().length === 0;
 };
+
+export default isBlank;

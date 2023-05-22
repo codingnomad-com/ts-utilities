@@ -1,10 +1,10 @@
 import { Maybe } from '~/types/Maybe';
-import { GetFormattedTimeProps } from './interfaces/GetFormattedTimeProps';
+import { IGetFormattedTimeProps } from './interfaces/IGetFormattedTimeProps';
 
 // RETURNS: 14:15
 
 export const getFormattedTime = (
-  props: GetFormattedTimeProps,
+  props: IGetFormattedTimeProps,
 ): Maybe<string> => {
   const { timestamp, options } = props;
 
@@ -33,3 +33,5 @@ export const getFormattedTime = (
 
   return undefined;
 };
+
+export default getFormattedTime;

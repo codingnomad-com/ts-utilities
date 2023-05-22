@@ -1,10 +1,10 @@
 import { Maybe } from '~/types/Maybe';
-import { GetFormattedDateLongProps } from './interfaces/GetFormattedDateLongProps';
+import { IGetFormattedDateLongProps } from './interfaces/IGetFormattedDateLongProps';
 
 // RETURNS: 25. August 2021
 
 export const getFormattedDateLong = (
-  props: GetFormattedDateLongProps,
+  props: IGetFormattedDateLongProps,
 ): Maybe<string> => {
   const { timestamp, options } = props;
   if (timestamp) {
@@ -30,3 +30,5 @@ export const getFormattedDateLong = (
 
   return undefined;
 };
+
+export default getFormattedDateLong;

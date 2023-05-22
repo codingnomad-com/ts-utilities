@@ -6,7 +6,7 @@
 // RETURNS: :~#!#%,%!:-!^$;~=^*:+|=_,&|~-=
 
 import { getRandomStringCustom } from './getRandomStringCustom';
-import { GetRandomStringProps } from './interfaces/GetRandomStringProps';
+import { IGetRandomStringProps } from './interfaces/IGetRandomStringProps';
 
 export const uppercasecaseChars = 'ABCDEFGHIKLMNOPQRSTVXYZ';
 export const lowercasecaseChars = 'abcdefghiklmnopqrstvxyz';
@@ -15,7 +15,7 @@ export const specialSimpleChars = '!#$%&*_+=-^~?;:.,|';
 export const specialAmbiguousChars = '"()\'{[]}/><';
 
 export const getRandomString = (
-  config: GetRandomStringProps = {
+  config: IGetRandomStringProps = {
     length: 16,
     uppercase: true,
     lowercase: true,
@@ -40,3 +40,5 @@ export const getRandomString = (
 
   return getRandomStringCustom({ length, allowedChars });
 };
+
+export default getRandomString;

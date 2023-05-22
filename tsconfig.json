@@ -18,6 +18,7 @@
     "outDir": "dist",
     "paths": {
       "~/address/*": ["src/helpers/address/*"],
+      "~/arrays/*": ["src/helpers/arrays/*"],
       "~/data/*": ["src/data/*"],
       "~/dateAndTime/*": ["src/helpers/dateAndTime/*"],
       "~/numbers/*": ["src/helpers/numbers/*"],
@@ -26,7 +27,6 @@
       "~/random/*": ["src/helpers/random/*"],
       "~/storage/*": ["src/storage/*"],
       "~/strings/*": ["src/helpers/strings/*"],
-      "~/token/*": ["src/helpers/token/*"],
       "~/types/*": ["src/types/*"]
     },
     "removeComments": true,

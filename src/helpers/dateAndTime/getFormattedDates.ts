@@ -1,13 +1,13 @@
 import { getFormattedDate } from './getFormattedDate';
 import { getFormattedDateFull } from './getFormattedDateFull';
 import { getFormattedDateLong } from './getFormattedDateLong';
-import { GetFormattedDatesProps } from './interfaces/GetFormattedDatesProps';
+import { IGetFormattedDatesProps } from './interfaces/IGetFormattedDatesProps';
 import { FormattedDatesReturnType } from './types/FormattedDatesReturnType';
 
 // RETURNS: { dateNormal, dateLong, dateFull }
 
 export const getFormattedDates = (
-  props: GetFormattedDatesProps,
+  props: IGetFormattedDatesProps,
 ): FormattedDatesReturnType => {
   const { dateFullOptions, dateLongOptions, dateNormalOptions, timestamp } =
     props;
@@ -33,3 +33,5 @@ export const getFormattedDates = (
 
   return { dateNormal: undefined, dateLong: undefined, dateFull: undefined };
 };
+
+export default getFormattedDates;

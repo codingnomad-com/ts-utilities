@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test';
 import { getRandomString } from './getRandomString';
-import { GetRandomStringProps } from './interfaces/GetRandomStringProps';
+import { IGetRandomStringProps } from './interfaces/IGetRandomStringProps';
 
 test.describe.configure({ mode: 'parallel' });
 
@@ -21,7 +21,7 @@ test('returns random string with length 16 by default if no length passed to pro
 });
 
 test('returns random string with length 30 with only uppercase characters', async () => {
-  const props: GetRandomStringProps = {
+  const props: IGetRandomStringProps = {
     length: 30,
     lowercase: false,
     numbers: false,
@@ -38,7 +38,7 @@ test('returns random string with length 30 with only uppercase characters', asyn
 });
 
 test('returns random string with length 30 with only lowercase characters', async () => {
-  const props: GetRandomStringProps = {
+  const props: IGetRandomStringProps = {
     length: 30,
     uppercase: false,
     numbers: false,
@@ -55,7 +55,7 @@ test('returns random string with length 30 with only lowercase characters', asyn
 });
 
 test('returns random string with length 30 with only numbers', async () => {
-  const props: GetRandomStringProps = {
+  const props: IGetRandomStringProps = {
     length: 30,
     uppercase: false,
     lowercase: false,
@@ -72,7 +72,7 @@ test('returns random string with length 30 with only numbers', async () => {
 });
 
 test('returns random string with length 30 with only simple special chars', async () => {
-  const props: GetRandomStringProps = {
+  const props: IGetRandomStringProps = {
     length: 30,
     uppercase: false,
     lowercase: false,
@@ -89,7 +89,7 @@ test('returns random string with length 30 with only simple special chars', asyn
 });
 
 test('returns random string with length 30 with only ambigous special chars', async () => {
-  const props: GetRandomStringProps = {
+  const props: IGetRandomStringProps = {
     length: 30,
     uppercase: false,
     lowercase: false,

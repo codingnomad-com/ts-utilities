@@ -9,3 +9,5 @@ import { isEmpty } from './isEmpty';
 export const isNotEmpty = (value?: string | null): boolean => {
   return !isEmpty(value);
 };
+
+export default isNotEmpty;

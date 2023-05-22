@@ -13,6 +13,16 @@ test('returns random integer between 5 and 10', async () => {
   expect(valuegetRandomInteger).toBeLessThanOrEqual(max);
 });
 
+test('returns random integer between 5 and 10 even when numbers were switched', async () => {
+  const min = 10;
+  const max = 5;
+
+  const valuegetRandomInteger = getRandomInteger({ min, max });
+
+  expect(valuegetRandomInteger).toBeGreaterThanOrEqual(max);
+  expect(valuegetRandomInteger).toBeLessThanOrEqual(min);
+});
+
 test('returns random integer between 100 and 101', async () => {
   const min = 100;
   const max = 101;

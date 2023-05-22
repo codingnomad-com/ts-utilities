@@ -1,5 +1,5 @@
 import { getWeekdaysForLocale } from '../dateAndTime/getWeekdaysForLocale';
-import { GetFormattedOpeningHoursProps } from './interfaces/GetFormattedOpeningHoursProps';
+import { IGetFormattedOpeningHoursProps } from './interfaces/IGetFormattedOpeningHoursProps';
 import { FormattedOpeningHours } from './types/FormattedOpeningHours';
 import { FormattedOpeningHoursGroup } from './types/FormattedOpeningHoursGroup';
 import { OpeningHoursType } from './types/OpeningHoursType';
@@ -77,7 +77,7 @@ const formatDays = (
 };
 
 export const getFormattedOpeningHours = (
-  props: GetFormattedOpeningHoursProps,
+  props: IGetFormattedOpeningHoursProps,
 ): FormattedOpeningHours[] => {
   const {
     locale = 'en-US',
@@ -94,3 +94,5 @@ export const getFormattedOpeningHours = (
 
   return formattedOpeningHours;
 };
+
+export default getFormattedOpeningHours;

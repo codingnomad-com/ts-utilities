@@ -1,10 +1,10 @@
 import { Maybe } from '~/types/Maybe';
-import { GetFormattedYearProps } from './interfaces/GetFormattedYearProps';
+import { IGetFormattedYearProps } from './interfaces/IGetFormattedYearProps';
 
 // RETURNS: 2021
 
 export const getFormattedYear = (
-  props: GetFormattedYearProps,
+  props: IGetFormattedYearProps,
 ): Maybe<string> => {
   const { timestamp, options } = props;
 
@@ -27,3 +27,5 @@ export const getFormattedYear = (
 
   return undefined;
 };
+
+export default getFormattedYear;
