@@ -2,6 +2,41 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 0.0.51 (2023-04-07)
+
+
+### Bug Fixes
+
+* **deps:** update dependency typescript to v5.0.4 ([f45ee0f](https://github.com/codingnomad-com/ts-utilities/commit/f45ee0f107770043dfeb8360885c34226d595246))
+
+### 0.0.50 (2023-04-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/react to v18.0.33 ([88382c1](https://github.com/codingnomad-com/ts-utilities/commit/88382c1861024deb50fd483e7292d996d72d8b89))
+
+### [0.0.49](https://github.com/codingnomad-com/ts-utilities/compare/v0.0.48...v0.0.49) (2023-04-04)
+
+### 0.0.48 (2023-04-04)
+
+### 0.0.47 (2023-04-02)
+
+### 0.0.46 (2023-04-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/react to v18.0.32 ([d5fb30a](https://github.com/codingnomad-com/ts-utilities/commit/d5fb30acb1809df7be6cbc20f647496f7acf6ac6))
+
+### 0.0.45 (2023-04-02)
+
+### 0.0.44 (2023-04-01)
+
+### 0.0.43 (2023-03-31)
+
+### 0.0.42 (2023-03-31)
+
 ### 0.0.41 (2023-03-30)
 
 ### 0.0.36 (2023-03-26)
