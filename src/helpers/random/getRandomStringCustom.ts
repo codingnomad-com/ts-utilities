@@ -1,8 +1,8 @@
 import { getRandomInteger } from './getRandomInteger';
-import { GetRandomStringCustomProps } from './interfaces/GetRandomStringCustomProps';
+import { IGetRandomStringCustomProps } from './interfaces/IGetRandomStringCustomProps';
 
 export const getRandomStringCustom = (
-  props: GetRandomStringCustomProps,
+  props: IGetRandomStringCustomProps,
 ): string => {
   const { length, allowedChars } = props;
 
@@ -19,3 +19,5 @@ export const getRandomStringCustom = (
 
   return value;
 };
+
+export default getRandomStringCustom;

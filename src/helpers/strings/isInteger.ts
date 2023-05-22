@@ -11,3 +11,5 @@ export const isInteger = (value?: string | null): boolean => {
 
   return !Number.isNaN(+value);
 };
+
+export default isInteger;

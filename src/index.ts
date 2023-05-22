@@ -5,25 +5,26 @@ export * from './data/countries/Countries';
 // -------------------------------------------------------------------------- //
 // HELPERS ------------------------------------------------------------------ //
 // -------------------------------------------------------------------------- //
-export { Address } from './helpers/Address';
-export { DateAndTime } from './helpers/DateAndTime';
-export { Numbers } from './helpers/Numbers';
-export { OpeningHours } from './helpers/OpeningHours';
-export { PhoneNumbers } from './helpers/PhoneNumbers';
-export { Random } from './helpers/Random';
-export { Strings } from './helpers/Strings';
-// token
-export * from './helpers/token/getTokenValues';
+export { Address } from './factories/Address';
+export { Arrays } from './factories/Arrays';
+export { DateAndTime } from './factories/DateAndTime';
+export { Numbers } from './factories/Numbers';
+export { OpeningHours } from './factories/OpeningHours';
+export { PhoneNumbers } from './factories/PhoneNumbers';
+export { Random } from './factories/Random';
+export { Strings } from './factories/Strings';
 // -------------------------------------------------------------------------- //
 // STORAGE ------------------------------------------------------------------ //
 // -------------------------------------------------------------------------- //
 // localStorage
-export * from './storage/localStorage/LocalStorageFactory';
+export { LocalStorage } from './storage/localStorage/LocalStorage';
 // sessionStorage
-export * from './storage/sessionStorage/SessionStorageFactory';
+export { SessionStorage } from './storage/sessionStorage/SessionStorage';
 // -------------------------------------------------------------------------- //
 // TYPES -------------------------------------------------------------------- //
 // -------------------------------------------------------------------------- //
 export * from './types';
 
 // TODO: fix factories (Storage)
+// TODO: refactor countries
+// TODO: refactor token

@@ -9,7 +9,6 @@
   - [Changelog](#changelog)
   - [Development](#development)
     - [Important](#important)
-    - [Publishing changes](#publishing-changes)
 
 <!-- /TOC -->
 
@@ -27,6 +26,9 @@ Here you can find the automatically generated [CHANGELOG.md](CHANGELOG.md).
 
 > Never touch the version tag in package.json manually!
 
-### Publishing changes
+<!-- TODO: More functions -->
+<!-- https://chancejs.com/index.html -->
 
-TBD
+<!-- TODO: Documentation -->
+<!-- https://github.com/adenekan41/helpers/blob/master/src/helpers/array-helpers.js -->
+<!-- https://github.com/Alhadis/Utils/blob/master/lib/colours.mjs -->

@@ -15,3 +15,5 @@ export const slugify = (value?: string | null): Maybe<string> => {
     .replace(/[^a-z0-9 ]/g, '') // remove all chars not letters, numbers and spaces (to be replaced)
     .replace(/\s+/g, '-'); // separator
 };
+
+export default slugify;
