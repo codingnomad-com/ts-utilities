@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@babel/core": "7.22.5",
-    "@babel/plugin-syntax-flow": "7.21.4",
+    "@babel/plugin-syntax-flow": "7.22.5",
     "@babel/plugin-transform-react-jsx": "7.22.5",
     "@codingnomad/eslint-config-cn": "0.1.25",
     "@commitlint/cli": "17.6.5",
