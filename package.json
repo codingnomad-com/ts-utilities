@@ -37,7 +37,7 @@
     "@babel/plugin-syntax-flow": "7.22.5",
     "@babel/plugin-transform-react-jsx": "7.22.5",
     "@codingnomad/eslint-config-cn": "0.1.25",
-    "@commitlint/cli": "17.7.0",
+    "@commitlint/cli": "17.7.1",
     "@commitlint/config-conventional": "17.7.0",
     "@playwright/test": "1.36.2",
     "@types/atob": "2.1.2",
