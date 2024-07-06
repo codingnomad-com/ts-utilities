@@ -58,7 +58,7 @@
     "react-is": "18.2.0",
     "read-pkg-up": "9.1.0",
     "replace": "1.2.2",
-    "rimraf": "4.4.1",
+    "rimraf": "5.0.8",
     "standard-version": "9.5.0",
     "ts-loader": "9.4.4",
     "which": "3.0.1",
