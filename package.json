@@ -23,7 +23,7 @@
     "ci:build": "rimraf dist && node esbuild.config.mjs && tsc --outDir dist"
   },
   "dependencies": {
-    "@types/node": "18.19.54",
+    "@types/node": "18.19.67",
     "@types/react": "18.3.14",
     "@types/react-dom": "18.3.2",
     "atob": "2.1.2",
