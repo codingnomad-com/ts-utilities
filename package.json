@@ -33,9 +33,9 @@
     "typescript": "5.7.3"
   },
   "devDependencies": {
-    "@babel/core": "7.26.10",
-    "@babel/plugin-syntax-flow": "7.26.0",
-    "@babel/plugin-transform-react-jsx": "7.25.9",
+    "@babel/core": "7.28.5",
+    "@babel/plugin-syntax-flow": "7.27.1",
+    "@babel/plugin-transform-react-jsx": "7.27.1",
     "@codingnomad/eslint-config-cn": "0.1.25",
     "@commitlint/cli": "17.8.1",
     "@commitlint/config-conventional": "17.8.1",
