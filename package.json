@@ -59,7 +59,7 @@
     "read-pkg-up": "9.1.0",
     "replace": "1.2.2",
     "rimraf": "4.4.1",
-    "standard-version": "9.5.0",
+    "commit-and-tag-version": "9.5.0",
     "ts-loader": "9.6.0",
     "which": "3.0.1",
     "yargs-parser": "21.1.1"
